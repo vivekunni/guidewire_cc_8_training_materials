@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="language-level">
+      <project id="TrainingApp" values="JDK_1_7" />
+    </group>
+    <group name="run-configuration-type">
+      <project id="TrainingApp" values="Application" />
+    </group>
+    <group name="module type">
+      <project id="TrainingApp" values="JAVA_MODULE" />
+    </group>
+    <group name="file-type">
+      <project id="TrainingApp" values="RPCE,PCF,Entity Name,IDEA_MODULE,XML,Images,SQL files,Plugin,ARCHIVE,WSC,UNKNOWN,Entity,PLAIN_TEXT,GosuCode,Properties,Typelist TTX,Typelist TTI,HTML,GX,Typelist TIX" />
+    </group>
+    <group name="run-configuration-type-temp">
+      <project id="TrainingApp" values="GosuProgramRunConfiguration" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="CreateFile.CreateFileAction" count="1" />
+      <entry feature="execute.Application.Debug" count="17" />
+      <entry feature="execute.Application.Run" count="32" />
+      <entry feature="execute.GosuProgramRunConfiguration.Debug" count="14" />
+      <entry feature="execute.GosuProgramRunConfiguration.Run" count="36" />
+    </counts>
+  </component>
+</application>
+

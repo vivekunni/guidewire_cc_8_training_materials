@@ -1,0 +1,2 @@
+You must generate the local WSI.  From the bin command window, run gwta regen-wsi-local.
+Then, run and start the server. You can do this directly from Guidewire Studio by first stoppign the running server and then starting it again. 

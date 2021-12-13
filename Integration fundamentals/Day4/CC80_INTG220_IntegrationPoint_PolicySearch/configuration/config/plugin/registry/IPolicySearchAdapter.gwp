@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<plugin
+  interface="IPolicySearchAdapter"
+  name="IPolicySearchAdapter">
+  <plugin-gosu
+    gosuclass="acme.cc.plugin.policy.AcmeIPolicySearchAdapter"/>
+</plugin>

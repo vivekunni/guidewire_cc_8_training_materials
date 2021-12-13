@@ -1,0 +1,49 @@
+/*
+  TA80_CONF190_Arrays_Solution.txt
+  Copy and paste Gosu code in Gosu Scratchpad
+  Run in Debug 'Server' Process
+ */
+
+uses ta.QueryUtil
+
+//Find the person whose Bank Account to check  using the ta.QueryUtil helper methods
+var output: String = ""
+var personIDs = new String[] {"98", "5"}
+output += "*****	Count the bank accounts per contact \n"
+for (personID in personIDs) {
+  var person = QueryUtil.findPerson(personID)
+  if (person != null) {
+    output += person.DisplayName + " has " + person.BankAccounts.length + " bank accounts. \n"
+  } else {
+    output += "person not found for " + personID + "\n"
+  }
+}
+
+output += "*****	Output account details per contact \n"
+for (personID in personIDs) {
+  var person = QueryUtil.findPerson(personID)
+  if (person.BankAccounts.length > 0) {
+    output += person.DisplayName + " has " + "\n"
+    for (bankAccount in person.BankAccounts index i) {
+      output += i + 1 + ") "
+      output += bankAccount.BankName + " : " + bankAccount.AccountType + " -- " + bankAccount.AccountNumber + "\n"
+    }
+  } else {
+    output += "person " + personID + " has no bank accounts! \n"
+  }
+}
+
+output += "*****	Output account details per contact only if with National Bank \n"
+for (personID in personIDs) {
+  var person = QueryUtil.findPerson(personID)
+  var bankName: String = "National Bank"
+  if (person.BankAccounts.hasMatch(\account -> account.BankName == bankName)) {
+    output += "This contact (" +person.DisplayName + ") has an account at " + bankName + "\n"
+  } else {
+    output += "This contact (" +person.DisplayName + ") does not have an account at " + bankName + "\n"
+  }
+}
+
+print(output)
+
+

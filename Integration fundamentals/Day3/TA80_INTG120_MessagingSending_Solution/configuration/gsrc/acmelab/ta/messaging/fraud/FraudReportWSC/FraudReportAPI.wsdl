@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<wsdl:definitions targetNamespace="http://example.com/external/FraudReportAPI" name="FraudReportAPI" xmlns:gwsoap="http://guidewire.com/ws/soapheaders" xmlns:gwwsdl="http://guidewire.com/pl/wsdl" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://example.com/external/FraudReportAPI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://example.com/external/FraudReportAPI" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://guidewire.com/ws/soapheaders" schemaLocation="soapheaders.xsd"/>
+      <xs:element name="checkForFraudReport">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="messageID" type="xs:string" minOccurs="0"/>
+            <xs:element name="payload" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="checkForFraudReportResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:int"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WebServiceException">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="WsiAuthenticationException">
+        <xs:complexType/>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:portType name="FraudReportAPIPortType">
+    <wsdl:operation name="checkForFraudReport">
+      <wsdl:input name="checkForFraudReport" message="tns:checkForFraudReport"/>
+      <wsdl:output name="checkForFraudReportResponse" message="tns:checkForFraudReportResponse"/>
+      <wsdl:fault name="WebServiceException" message="tns:WebServiceException"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FraudReportAPISoap12Binding" type="tns:FraudReportAPIPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="checkForFraudReport">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="checkForFraudReport">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="checkForFraudReportResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap12:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FraudReportAPISoap11Binding" type="tns:FraudReportAPIPortType">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="checkForFraudReport">
+      <soap11:operation style="document"/>
+      <wsdl:input name="checkForFraudReport">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="checkForFraudReportResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap11:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FraudReportAPI">
+    <wsdl:port name="FraudReportAPISoap12Port" binding="tns:FraudReportAPISoap12Binding">
+      <soap12:address location="http://localhost:9990/ab/ws/external/FraudReportAPI"/>
+      <gwwsdl:address location="${ab}/ws/external/FraudReportAPI"/>
+    </wsdl:port>
+    <wsdl:port name="FraudReportAPISoap11Port" binding="tns:FraudReportAPISoap11Binding">
+      <soap11:address location="http://localhost:9990/ab/ws/external/FraudReportAPI/soap11"/>
+      <gwwsdl:address location="${ab}/ws/external/FraudReportAPI/soap11"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:message name="checkForFraudReport">
+    <wsdl:part name="parameters" element="tns:checkForFraudReport"/>
+  </wsdl:message>
+  <wsdl:message name="checkForFraudReportResponse">
+    <wsdl:part name="parameters" element="tns:checkForFraudReportResponse"/>
+  </wsdl:message>
+  <wsdl:message name="WebServiceException">
+    <wsdl:part name="WebServiceException" element="tns:WebServiceException"/>
+  </wsdl:message>
+  <wsdl:message name="WsiAuthenticationException">
+    <wsdl:part name="WsiAuthenticationException" element="tns:WsiAuthenticationException"/>
+  </wsdl:message>
+  <wsdl:message name="gw-authentication">
+    <wsdl:part name="gw-authentication" element="gwsoap:authentication"/>
+  </wsdl:message>
+  <wsdl:message name="gw-locale">
+    <wsdl:part name="gw-locale" element="gwsoap:locale"/>
+  </wsdl:message>
+</wsdl:definitions>

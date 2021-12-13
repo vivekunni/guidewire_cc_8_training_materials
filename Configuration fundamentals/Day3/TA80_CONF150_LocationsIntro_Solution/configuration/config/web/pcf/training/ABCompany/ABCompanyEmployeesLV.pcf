@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../pcf.xsd">
+  <ListViewPanel
+    id="ABCompanyEmployeesLV">
+    <Require
+      name="anABContact"
+      type="ABContact"/>
+    <RowIterator
+      editable="false"
+      elementName="currentEmployee"
+      pageSize="5"
+      value="(anABContact as ABCompany).Employees"
+      visible="anABContact typeis ABCompany">
+      <IteratorSort
+        sortBy="currentEmployee.LastName"
+        sortOrder="1"/>
+      <Row
+        editable="true">
+        <Cell
+          action="ABContactDetailsPage.go(currentEmployee)"
+          id="Name"
+          label="displaykey.Training.Name"
+          value="currentEmployee.DisplayName"/>
+        <Cell
+          id="Occupation"
+          label="displaykey.Training.JobTitle"
+          value="currentEmployee.Occupation"/>
+        <Cell
+          id="emailAddress"
+          label="displaykey.Training.EmailAddress"
+          value="currentEmployee.EmailAddress1"/>
+      </Row>
+    </RowIterator>
+  </ListViewPanel>
+</PCF>

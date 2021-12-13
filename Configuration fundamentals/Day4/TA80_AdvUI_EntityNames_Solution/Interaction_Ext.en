@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<Entity
+  name="Interaction_Ext">
+  <Columns>
+    <Column
+      beanPath="Interaction_Ext.InteractionDate"
+      name="interactionDate"/>
+    <Column
+      beanPath="Interaction_Ext.Reason"
+      name="reason"/>
+    <Column
+      beanPath="Interaction_Ext.Summary"
+      name="summary"/>
+  </Columns>
+  <DisplayName><![CDATA[return interactionDate + ": " + reason]]></DisplayName>
+  <DisplayName
+    type="Detail"><![CDATA[return interactionDate + ": " + reason + ": " + summary]]></DisplayName>
+</Entity>

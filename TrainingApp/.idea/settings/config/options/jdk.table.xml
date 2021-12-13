@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="1.7" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.7.0_25&quot;" />
+      <homePath value="C:/Program Files/Java/jdk1.7.0_25" />
+      <roots>
+        <annotationsPath>
+          <root type="composite">
+            <root type="simple" url="jar://$APPLICATION_HOME_DIR$/lib/jdkAnnotations.jar!/" />
+          </root>
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/charsets.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/deploy.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/javaws.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jce.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jfr.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jsse.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/management-agent.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/plugin.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/resources.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/rt.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/access-bridge-64.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/dnsns.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/jaccess.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/localedata.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunec.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunjce_provider.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunmscapi.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/zipfs.jar!/" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="Default Gosu SDK" />
+      <type value="Gosu SDK" />
+      <version value="java version &quot;1.7.0_25&quot;" />
+      <homePath value="C:\Thiru\materials\Guidwire\TrainingApp8\Guidewire\TrainingApp\studio\idea-gosu-plugin" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/charsets.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/deploy.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/javaws.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jce.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jfr.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jsse.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/management-agent.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/plugin.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/resources.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/rt.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/access-bridge-64.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/dnsns.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/jaccess.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/localedata.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunec.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunjce_provider.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunmscapi.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/zipfs.jar!/" />
+            <root type="simple" url="jar://$SDK_ROOT$/studio/idea-gosu-plugin/lib/gosu-core-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$SDK_ROOT$/studio/idea-gosu-plugin/lib/gosu-core-api-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$SDK_ROOT$/studio/idea-gosu-plugin/lib/gosu-launcher-api-2.jar!/" />
+            <root type="simple" url="jar://$SDK_ROOT$/studio/idea-gosu-plugin/lib/gosu-launcher-impl-2.0.jar!/" />
+            <root type="simple" url="jar://$SDK_ROOT$/studio/idea-gosu-plugin/lib/gosu-shades-1.0-1.jar!/" />
+            <root type="simple" url="jar://$SDK_ROOT$/studio/idea-gosu-plugin/lib/idea-gosu-plugin-4.0-SNAPSHOT.jar!/" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional jdk="1.7" gosuVersion="0.11-SNAPSHOT" />
+    </jdk>
+    <jdk version="2">
+      <name value="TrainingApp SDK" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.7.0_25&quot;" />
+      <homePath value="C:/Program Files/Java/jdk1.7.0_25" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/charsets.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/deploy.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/javaws.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jce.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jfr.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/jsse.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/management-agent.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/plugin.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/resources.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/rt.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/access-bridge-64.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/dnsns.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/jaccess.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/localedata.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunec.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunjce_provider.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/sunmscapi.jar!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/jre/lib/ext/zipfs.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/ab/ab-gunit/1.0-SNAPSHOT/ab-gunit-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/ab/ab/1.0-SNAPSHOT/ab-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/ab/ab-plugin/1.0-SNAPSHOT/ab-plugin-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/plugin/1.0-SNAPSHOT/plugin-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/util/1.0-SNAPSHOT/util-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/felix/org.apache.felix.gogo.shell/0.10.0/org.apache.felix.gogo.shell-0.10.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/felix/org.apache.felix.gogo.runtime/0.10.0/org.apache.felix.gogo.runtime-0.10.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/felix/org.apache.felix.gogo.command/0.12.0/org.apache.felix.gogo.command-0.12.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/felix/org.apache.felix.bundlerepository/1.6.0/org.apache.felix.bundlerepository-1.6.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/equinox/org.eclipse.equinox.common/3.6.100/org.eclipse.equinox.common-3.6.100.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/equinox/org.eclipse.equinox.cm/1.0.400/org.eclipse.equinox.cm-1.0.400.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/felix/org.apache.felix.shell/1.4.2/org.apache.felix.shell-1.4.2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/equinox/org.eclipse.equinox.registry/3.5.200/org.eclipse.equinox.registry-3.5.200.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/equinox/org.eclipse.equinox.util/1.0.400/org.eclipse.equinox.util-1.0.400.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/equinox/org.eclipse.equinox.ds/1.4.0/org.eclipse.equinox.ds-1.4.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/osgi/console-ext/1.0.1/console-ext-1.0.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/felix/org.apache.felix.webconsole/4.0.0/org.apache.felix.webconsole-4.0.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/h2database/h2/1.2.147/h2-1.2.147.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/db2jcc4/4.13.127/db2jcc4-4.13.127.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/ojdbc7/12.1.0.1.0-prod/ojdbc7-12.1.0.1.0-prod.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/sqljdbc4/4.0.2206.100/sqljdbc4-4.0.2206.100.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/dbcp-fragment/1.0-SNAPSHOT/dbcp-fragment-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/sqlinform-pro/4.8.49/sqlinform-pro-4.8.49.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-process/0.11-SNAPSHOT/gosu-process-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-servlet/0.11-SNAPSHOT/gosu-servlet-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/modules/1.0-SNAPSHOT/modules-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-webservices/0.11-SNAPSHOT/gosu-webservices-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-xml/0.11-SNAPSHOT/gosu-xml-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/net/sourceforge/jline/com.springsource.jline/0.9.94/com.springsource.jline-0.9.94.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/avalon-framework/4.2.0/avalon-framework-4.2.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-ext-awt/1.7.0/batik-ext-awt-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-bridge/1.7.0/batik-bridge-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-css/1.7.0/batik-css-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-dom/1.7.0/batik-dom-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-extension/1.7.0/batik-extension-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-util-gui/1.7.0/batik-util-gui-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-parser/1.7.0/batik-parser-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-dom-svg/1.7.0/batik-dom-svg-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-util/1.7.0/batik-util-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-xml/1.7.0/batik-xml-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-transcoder/1.7.0/batik-transcoder-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/batik-svggen/1.7.0/batik-svggen-1.7.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/org.w3c.dom.events/3.0.0/org.w3c.dom.events-3.0.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/org.w3c.dom.svg/1.1.0/org.w3c.dom.svg-1.1.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/org.w3c.dom.smil/1.0.1/org.w3c.dom.smil-1.0.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/org.w3c.css.sac/1.3.1/org.w3c.css.sac-1.3.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/bfopdf/2.11.11-3/bfopdf-2.11.11-3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-cli/commons-cli/1.2/commons-cli-1.2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-digester/commons-digester/2.1/commons-digester-2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-discovery/commons-discovery/0.5/commons-discovery-0.5.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-fileupload/commons-fileupload/1.2.2/commons-fileupload-1.2.2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/commons-httpclient/3.1.0/commons-httpclient-3.1.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/commons-jxpath/1.1-1/commons-jxpath-1.1-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-lang/commons-lang/2.4/commons-lang-2.4.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/commons/com.springsource.org.apache.commons.logging/1.1.1/com.springsource.org.apache.commons.logging-1.1.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-math/commons-math/1.2/commons-math-1.2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/cotta/3.0.0-beta/cotta-3.0.0-beta.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/fop/1.0/fop-1.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gw-axis/1.2.1-2/gw-axis-1.2.1-2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/htmIndex/3.0.1/htmIndex-3.0.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/ibm/icu/icu4j/4.8.1.1.gw/icu4j-4.8.1.1.gw.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/jakarta-oro/2.0.8/jakarta-oro-2.0.8.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/javax/xml/jaxrpc-api-osgi/1.1-b01/jaxrpc-api-osgi-1.1-b01.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/jcommon/1.0.17-1/jcommon-1.0.17-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/jfreechart/1.0.14-1/jfreechart-1.0.14-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/mortbay/jetty/jetty/6.1.23/jetty-6.1.23.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/mortbay/jetty/jetty-util/6.1.23/jetty-util-6.1.23.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/mortbay/jetty/start/6.1.23/start-6.1.23.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/jFdfTk/0/jFdfTk-0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/jgroups/jgroups/3.0.14.Final/jgroups-3.0.14.Final.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/jgroups3-fragment/1.0.0/jgroups3-fragment-1.0.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/joda-time/joda-time/2.0/joda-time-2.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/joda/joda-convert/1.3/joda-convert-1.3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/log4j/com.springsource.org.apache.log4j/1.2.16/com.springsource.org.apache.log4j-1.2.16.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/geronimo/javamail/geronimo-javamail_1.4_mail/1.8.3/geronimo-javamail_1.4_mail-1.8.3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/quartz/2.1.6/quartz-2.1.6.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/org/seleniumhq/selenium/selenium-java/2.32.0/selenium-java-2.32.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/xml-serializer/2.7.1/xml-serializer-2.7.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/slf4j/slf4j-ext/1.7.5/slf4j-ext-1.7.5.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/ch/qos/cal10n/cal10n-api/0.7.4/cal10n-api-0.7.4.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/velocity/1.5-2/velocity-1.5-2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/velocity-tools/1.3-1/velocity-tools-1.3-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/commons-validator/1.3.1/commons-validator-1.3.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gw-wsdl4j/1.6.2-2/gw-wsdl4j-1.6.2-2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/ws/security/wss4j/1.5.9/wss4j-1.5.9.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/xalan/2.7.1/xalan-2.7.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/xmlsec/1.4.3/xmlsec-1.4.3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/xmlgraphics-commons/1.4/xmlgraphics-commons-1.4.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/libphonenumber/5.1/libphonenumber-5.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/antlr/com.springsource.org.antlr.runtime/3.1.3/com.springsource.org.antlr.runtime-3.1.3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/custommonkey/xmlunit/com.springsource.org.custommonkey.xmlunit/1.2.0/com.springsource.org.custommonkey.xmlunit-1.2.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/ab/ab-typeloader/1.0-SNAPSHOT/ab-typeloader-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/contact/1.0-SNAPSHOT/contact-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/beangraphutil/1.0-SNAPSHOT/beangraphutil-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/pl/1.0-SNAPSHOT/pl-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/perfdownload-analyzer/1.0-SNAPSHOT/perfdownload-analyzer-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/perfdownload-collector/1.0-SNAPSHOT/perfdownload-collector-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/solr/1.0-SNAPSHOT/solr-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/solr-solrj/4.1.0-osgi/solr-solrj-4.1.0-osgi.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/commons-codec/commons-codec/1.6/commons-codec-1.6.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/zookeeper/zookeeper/3.4.5-gw07/zookeeper-3.4.5-gw07.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/jline/jline/0.9.94/jline-0.9.94.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/httpcomponents/httpclient-osgi/4.2.1/httpclient-osgi-4.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/httpcomponents/httpclient/4.2.1/httpclient-4.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/httpcomponents/httpmime/4.2.1/httpmime-4.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/httpcomponents/httpclient-cache/4.2.1/httpclient-cache-4.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/httpcomponents/fluent-hc/4.2.1/fluent-hc-4.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/httpcomponents/httpcore-osgi/4.2.1/httpcore-osgi-4.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/httpcomponents/httpcore/4.2.1/httpcore-4.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/httpcomponents/httpcore-nio/4.2.1/httpcore-nio-4.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/web/org.json/1.0.0/org.json-1.0.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/junit/4.11/junit-4.11.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/biz/aQute/bndlib/1.50.0/bndlib-1.50.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/equinox/org.eclipse.osgi/3.8.0/org.eclipse.osgi-3.8.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/equinox/org.eclipse.osgi.services/3.3.100/org.eclipse.osgi.services-3.3.100.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/integration/gw-integration-execution/0.1.7/gw-integration-execution-0.1.7.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/google/guava/guava/12.0/guava-12.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/integration/gw-integration-jndi/0.1.7/gw-integration-jndi-0.1.7.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/integration/gw-integration-runtime/0.1.7/gw-integration-runtime-0.1.7.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/integration/gw-integration-cm/0.1.7/gw-integration-cm-0.1.7.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/integration/gw-integration-inbound/0.1.7/gw-integration-inbound-0.1.7.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/integration/gw-integration-inbound-files/0.1.7/gw-integration-inbound-files-0.1.7.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/integration/gw-integration-inbound-jms/0.1.7/gw-integration-inbound-jms-0.1.7.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/fasterxml/uuid/java-uuid-generator/3.1.3/java-uuid-generator-3.1.3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/sdoapi/12.1.0.1.0-osgi01/sdoapi-12.1.0.1.0-osgi01.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/poi/3.8/poi-3.8.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/xmlbeans/2.4.0/xmlbeans-2.4.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/xml/com.springsource.org.apache.xml.resolver/1.2.0/com.springsource.org.apache.xml.resolver-1.2.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/dom4j/1.6.1/dom4j-1.6.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/codehaus/woodstox/woodstox-core-asl/4.1.2/woodstox-core-asl-4.1.2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/pl-osgi-plugins/1.0-SNAPSHOT/pl-osgi-plugins-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/pl-gunit/1.0-SNAPSHOT/pl-gunit-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/perfdownload-analyzer-test/1.0-SNAPSHOT/perfdownload-analyzer-test-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/perfdownload-collector-test/1.0-SNAPSHOT/perfdownload-collector-test-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-core-api-precompiled/0.11-SNAPSHOT/gosu-core-api-precompiled-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-core-api/0.11-SNAPSHOT/gosu-core-api-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gosu-shades/1.0-1/gosu-shades-1.0-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-launcher-api/2/gosu-launcher-api-2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-launcher-impl/2.0/gosu-launcher-impl-2.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-core/0.11-SNAPSHOT/gosu-core-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-test-api/0.11-SNAPSHOT/gosu-test-api-0.11-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/easytesting/fest-assert/1.3/fest-assert-1.3.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/easytesting/fest-util/1.1.4/fest-util-1.1.4.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/gosu-lang/gosu/gosu-classredefiner/1.0.0/gosu-classredefiner-1.0.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/com/guidewire/pl/testresult-formatter/1.0-SNAPSHOT/testresult-formatter-1.0-SNAPSHOT.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/ant/com.springsource.org.apache.tool.ant.taskdefs.optional.junit/1.7.1/com.springsource.org.apache.tool.ant.taskdefs.optional.junit-1.7.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/ant/com.springsource.org.apache.tools.ant/1.7.1/com.springsource.org.apache.tools.ant-1.7.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/ant/com.springsource.org.apache.tools.ant.launch/1.7.1/com.springsource.org.apache.tools.ant.launch-1.7.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/apache/bcel/com.springsource.org.apache.bcel/5.2.0/com.springsource.org.apache.bcel-5.2.0.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/cactus/1.7.1/cactus-1.7.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/aspectjrt/1.2.1/aspectjrt-1.2.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/easymock/easymock/3.1/easymock-3.1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/org/objenesis/objenesis/1.2/objenesis-1.2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/fest-assert/1.3-osgi00/fest-assert-1.3-osgi00.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/fest-util/1.1.4-osgi00/fest-util-1.1.4-osgi00.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gdata-appsforyourdomain/1.1.0-1/gdata-appsforyourdomain-1.1.0-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gdata-base/1.1.0-1/gdata-base-1.1.0-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gdata-client/1.15.1-1/gdata-client-1.15.1-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gdata-core/1.15.2/gdata-core-1.15.2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gdata-docs/1.0.0-1/gdata-docs-1.0.0-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gdata-media/1.0.0-1/gdata-media-1.0.0-1.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/gdata-spreadsheet/1.0.8-2/gdata-spreadsheet-1.0.8-2.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/qdox/1.12/qdox-1.12.jar!/" />
+            <root type="simple" url="jar://$M2_REPO$/gw/managed/osgi/strutstest/2.1.3/strutstest-2.1.3.jar!/" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+            <root type="simple" url="jar://C:/Program Files/Java/jdk1.7.0_25/src.zip!/" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</application>
+

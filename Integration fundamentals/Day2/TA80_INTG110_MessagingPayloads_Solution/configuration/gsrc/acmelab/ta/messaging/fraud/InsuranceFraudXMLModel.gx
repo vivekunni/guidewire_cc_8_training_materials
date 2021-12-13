@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<gx-model type="entity.ABContact" xmlns="http://guidewire.com/gx">
+  <includes>
+    <include path="DisplayName" type="java.lang.String" propertyInclusionType="NORMAL"/>
+    <include path="TaxID" type="java.lang.String" propertyInclusionType="NORMAL"/>
+  </includes>
+</gx-model>

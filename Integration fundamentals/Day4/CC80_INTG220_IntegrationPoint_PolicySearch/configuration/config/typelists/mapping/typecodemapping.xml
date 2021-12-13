@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Mapping for sample Homeowners PAS integration to ExternalApp
+-->
+<typecodemapping>
+    
+	<namespacelist>
+		<namespace name="acme:pas" />
+	</namespacelist>
+
+	<typelist name="PolicyType">
+		<mapping typecode="BusinessAuto" namespace="acme:pas" alias="CommercialAuto"/>
+		<mapping typecode="PersonalAuto" namespace="acme:pas" alias="PersonalAuto"/>
+		<mapping typecode="Homeowners"   namespace="acme:pas" alias="Homeowner's"/>
+	</typelist>
+    <typelist name="CoverageType">
+        <mapping typecode="HOLI_Personal_Liability_HOE" namespace="acme:pas" alias="Homeowner's Personal Liability"/>	
+		<mapping typecode="HOLI_Med_Pay_HOE"            namespace="acme:pas" alias="Homeowner's Medical Payments"/>	
+		<mapping typecode="HODW_Dwelling_Cov_HOE"       namespace="acme:pas" alias="Homeowner's Dwelling"/>	
+		<mapping typecode="HODW_Loss_Of_Use_HOE"        namespace="acme:pas" alias="Homeowner's Loss Of Use"/>	
+		<mapping typecode="HODW_Earthquake_HOE"         namespace="acme:pas" alias="Earthquake Coverage"/>	
+		<mapping typecode="HODW_Personal_Property_HOE"  namespace="acme:pas" alias="Homeowner's Personal Property"/>	
+		<mapping typecode="HODW_FungiCov_HOE"           namespace="acme:pas" alias="Fungus Coverage"  />	
+        <mapping typecode="HODW_Other_Structures_HOE"   namespace="acme:pas" alias="Homeowner's Other Structures"/>			
+    </typelist>
+	
+</typecodemapping>

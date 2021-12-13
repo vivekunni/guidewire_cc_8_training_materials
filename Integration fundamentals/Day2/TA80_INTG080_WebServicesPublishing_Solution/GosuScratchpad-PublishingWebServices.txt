@@ -1,0 +1,14 @@
+var api = new wsi.local.acmelab.ta.webservice.company.companyapi.CompanyAPI()
+api.Config.Http.Authentication.Basic.Username = "su"
+api.Config.Http.Authentication.Basic.Password = "gw"
+
+print (api.doesCompanyExist("54-0683626"))
+print (api.doesCompanyExist("12-3456789"))
+
+api.createContactNote("54-0683626", "This is a test note")
+
+var employeeSummary : wsi.local.acmelab.ta.webservice.company.companyapi.types.complex.EmployeeSummary
+employeeSummary = api.retrieveEmployeeSummaryByCompanyTaxID("54-0683626")
+print (employeeSummary.NumberOfEmployees)
+print (employeeSummary.EmployeeScore)
+print (employeeSummary.HeadquartersLocation)

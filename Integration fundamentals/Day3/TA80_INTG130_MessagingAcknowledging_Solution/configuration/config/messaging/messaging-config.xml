@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!-- ==============================================================================
+   Messaging Configuration
+  ============================================================================== -->
+<messaging-config
+  xmlns="http://guidewire.com/messaging-config">
+  <messaging>
+    <destination
+      disabled="true"
+      id="65"
+      initialretryinterval="500"
+      internal="true"
+      maxretries="5"
+      name="Java.MessageDestination.Email.Name"
+      transportplugin="emailMessageTransport"/>
+    <destination
+      disabled="true"
+      id="70"
+      internal="true"
+      name="Java.MessageDestination.PolicySystemTransport.Name"
+      transportplugin="PCPolicySystemTransport">
+      <event
+        name="ABContactChanged"/>
+      <event
+        name="ABContactRemoved"/>
+      <event
+        name="ABContactPendingChangeRejected"/>
+    </destination>
+    <destination
+      disabled="true"
+      id="71"
+      internal="true"
+      name="Java.MessageDestination.ClaimSystemTransport.Name"
+      transportplugin="CCClaimSystemTransport">
+      <event
+        name="ABContactChanged"/>
+      <event
+        name="ABContactRemoved"/>
+      <event
+        name="ABContactPendingChangeRejected"/>
+    </destination>
+    <destination
+      disabled="true"
+      id="72"
+      internal="true"
+      name="Java.MessageDestination.BillingSystemTransport.Name"
+      transportplugin="BCBillingSystemTransport">
+      <event
+        name="ABContactChanged"/>
+      <event
+        name="ABContactRemoved"/>
+      <event
+        name="ABContactPendingChangeRejected"/>
+    </destination>
+    <destination
+      id="13"
+      name="Bank Account Verification"
+      pollinterval="15000"
+      requestplugin="BankAccountVerificationRequest"
+      transportplugin="BankAccountVerificationTransport">
+      <event
+        name="BankAccountAdded"/>
+      <event
+        name="BankAccountChanged"/>
+    </destination>
+    <destination
+      id="14"
+      name="Vendor Recommendation"
+      requestplugin="VendorRecommendationRequest"
+      transportplugin="VendorRecommendationTransport">
+      <event
+        name="ABContactRecommended"/>
+    </destination>
+    <destination
+      id="15"
+      name="Legal Case Report"
+      requestplugin="LegalReportRequest"
+      transportplugin="LegalReportTransport">
+      <event
+        name="LegalCaseReportRequested"/>
+    </destination>
+    <destination
+      id="20"
+      name="Safe Ordering Demo"
+      transportplugin="SafeOrderingDemoTransport">
+      <event
+        name="SafeOrderingDemoWithAck"/>
+      <event
+        name="SafeOrderingDemoNoAck"/>
+    </destination>
+    <destination
+      id="21"
+      name="Message Generator"
+      requestplugin="MessageGeneratorRequest"
+      transportplugin="MessageGeneratorTransport">
+      <event
+        name="MessageGeneratorAdded"/>
+    </destination>
+    <destination
+      id="22"
+      name="Fraud Check"
+      requestplugin="InsuranceFraudRequest"
+      transportplugin="InsuranceFraudTransport">
+      <event
+        name="ABContactAdded"/>
+      <event
+        name="ABContactChanged"/>
+    </destination>
+  </messaging>
+  <messaging
+    env="NewConfig">
+    <destination
+      id="1"
+      name=""/>
+  </messaging>
+</messaging-config>

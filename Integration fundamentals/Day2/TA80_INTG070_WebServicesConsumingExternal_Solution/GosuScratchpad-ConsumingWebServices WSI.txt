@@ -1,0 +1,9 @@
+var api = new acmelab.ta.webservice.vehiclewsc.vehiclewsiapi.VehicleWsiAPI()
+
+api.Config.Http.Authentication.Basic.Username = "su"
+api.Config.Http.Authentication.Basic.Password = "gw"
+
+print(api.verifyVehicle("12345678901234567"))
+print(api.verifyVehicle("ABCDEFGHIJKLMNOPQ"))
+print(api.verifyVehicle("111"))
+print(api.verifyVehicle("$$$$$$$$$$$$$$$$$"))

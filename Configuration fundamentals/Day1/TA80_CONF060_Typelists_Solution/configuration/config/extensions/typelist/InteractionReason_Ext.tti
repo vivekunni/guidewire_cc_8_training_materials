@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<typelist
+  xmlns="http://guidewire.com/typelists"
+  desc="InteractionReason_Ext"
+  name="InteractionReason_Ext">
+  <typecode
+    code="request"
+    desc="Request"
+    name="Request"
+    priority="10"/>
+  <typecode
+    code="complaint"
+    desc="Complaint"
+    name="Complaint"
+    priority="20"/>
+  <typecode
+    code="courtesyContact"
+    desc="Courtesy Contact"
+    name="Courtesy Contact"
+    priority="30"/>
+  <typecode
+    code="other"
+    desc="Other"
+    name="Other"
+    priority="50"/>
+</typelist>

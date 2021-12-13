@@ -1,0 +1,1 @@
+WARNING: This solution file is not purely additive. It contains a copy of the EventFired_dir directory. Be aware that if you copy this solution into the application as is, then it may create set of Event Fired rules that are not internally consistent.

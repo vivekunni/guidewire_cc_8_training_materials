@@ -1,0 +1,33 @@
+/*
+  TA80_CONF180_GosuIntro_Solution.txt
+  Copy and paste Gosu code in Gosu Scratchpad
+  Run in Debug 'Server' Process
+ */
+
+uses ta.QueryUtil
+
+var output: String = ""
+var publicID: String = ""    // execute code with public id values, so specific a string here
+var contact = QueryUtil.findContact(publicID)   // use the QueryUtil helper methods
+if (contact != null) {
+  // display name and create date
+  output += contact.DisplayName + " was created " +  contact.CreateTime + ". \n"
+  // primary address state
+  if (contact.PrimaryAddress.State != null) {
+    output += "Primary address state is " + contact.PrimaryAddress.State + ". \n"
+  }
+  // type of contact  and whether a strategic partner or not
+  output += "The contact is of the type " + contact.Subtype.DisplayName
+  output += contact.IsStrategicPartner_Ext ? " and is a strategic partner" :  " and is NOT a strategic partner"
+  output += ". \n"
+  if (contact typeis entity.ABDoctor) {
+    output += "Doctor category is " + contact.Category.DisplayName + " and specialty is " + contact.Specialty.DisplayName + ". \n"
+  }
+  else {
+    output += "Contact is not of the type " + entity.ABDoctor.Type.DisplayName + ".\n"
+  }
+} else {
+  output += "No contact found for public id = " + publicID + "! \n"
+}
+
+print(output)

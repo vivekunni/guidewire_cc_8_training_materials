@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="pcf.xsd">
+  <Page
+    canEdit="true"
+    id="ABContactAnalysisPage"
+    title="displaykey.Training.Analysis">
+    <LocationEntryPoint
+      signature="ABContactAnalysisPage(anABContact:ABContact)"/>
+    <Variable
+      name="anABContact"
+      type="ABContact"/>
+    <Screen>
+      <PanelRef
+        def="ABContactAnalysisDV(anABContact)">
+        <Toolbar>
+          <EditButtons/>
+          <ToolbarButton
+            action="anABContact.upgradeToStrategicPartner()"
+            available="(CurrentLocation.InEditMode == true &amp;&amp; anABContact.StrategicPartner_Ext == false)"
+            id="ToolbarButton"
+            label="displaykey.Training.UpgradeToStrategicPartner"/>
+        </Toolbar>
+      </PanelRef>
+    </Screen>
+  </Page>
+</PCF>

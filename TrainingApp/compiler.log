@@ -1,0 +1,416 @@
+Project file: C:\Thiru\materials\Guidwire\TrainingApp8\Guidewire\TrainingApp\.idea\settings\system\tmp\gosuc-project-file-79096492545951599737715384120272
+Stdout file: compiler.log
+Module path: [configuration]
+Creating Gosuc -> 576ms
+Could not find product specific Config parameter class, gw.api.system.ABConfigParameters Will allow platform only config parameters
+Display key found with different argument lists across locales: Web.Address.AutoFill.AddressField.InvalidFormat
+Display key found with different argument lists across locales: Web.DBStatsSubmitDV.PreviousStatsTime
+Display key found with different argument lists across locales: Java.Web.PCFVerification.DetailViewWidget.ReferencesExternalSharedSection
+Display key found with different argument lists across locales: Java.Database.InvalidOracleStatisticLevel
+Display key found with different argument lists across locales: Java.Database.PhysicalTablespaceNotFound
+Display key found with different argument lists across locales: Java.JMX.Operation.Error
+Display key found with different argument lists across locales: Java.Web.PCFVerification.DetailViewWidget.NotAllowedWithMenuPanel
+Display key found with different argument lists across locales: Java.Database.DBException.ParameterMustBeSet
+Display key found with different argument lists across locales: Java.Database.UnsupportedJDBCDriver
+Display key found with different argument lists across locales: Web.TabBar.Logout
+Display key found with different argument lists across locales: Java.ProximitySearch.Error.NonNullArgument
+Display key found with different argument lists across locales: Java.Scheduler.Started
+Display key found with different argument lists across locales: Java.Database.InvalidOracleQueryRewrite
+Display key found with different argument lists across locales: Java.ProximitySearch.Error.NonPositiveArgument
+Could not find product specific Config parameter class, gw.api.system.ABConfigParameters Will allow platform only config parameters
+Display key found with different argument lists across locales: Web.Address.AutoFill.AddressField.InvalidFormat
+Display key found with different argument lists across locales: Web.DBStatsSubmitDV.PreviousStatsTime
+Display key found with different argument lists across locales: Java.Web.PCFVerification.DetailViewWidget.ReferencesExternalSharedSection
+Display key found with different argument lists across locales: Java.Database.InvalidOracleStatisticLevel
+Display key found with different argument lists across locales: Java.Database.PhysicalTablespaceNotFound
+Display key found with different argument lists across locales: Java.JMX.Operation.Error
+Display key found with different argument lists across locales: Java.Web.PCFVerification.DetailViewWidget.NotAllowedWithMenuPanel
+Display key found with different argument lists across locales: Java.Database.DBException.ParameterMustBeSet
+Display key found with different argument lists across locales: Java.Database.UnsupportedJDBCDriver
+Display key found with different argument lists across locales: Web.TabBar.Logout
+Display key found with different argument lists across locales: Java.ProximitySearch.Error.NonNullArgument
+Display key found with different argument lists across locales: Java.Scheduler.Started
+Display key found with different argument lists across locales: Java.Database.InvalidOracleQueryRewrite
+Display key found with different argument lists across locales: Java.ProximitySearch.Error.NonPositiveArgument
+Initializing Gosuc -> 12293ms
+Compiling trainingapp.demo.messageack.MessageAckPage...
+Compiling trainingapp.demo.gosu.MiscellaneousExamples...
+Compiling trainingapp.base.AssignedUserUtil...
+Compiling trainingapp.base.QueryUtil...
+Compiling trainingapp.base.RecentlyViewedContactUtil...
+Warning: Implicit coercion to ArrayList. Please use ArrayList explicitly. [line:-1054 col:32] in
+line 1: 
+Compiling ta.QueryUtil...
+Warning: Compile-time constant expression required. [line:-17149 col:15] in
+line 1: 
+Warning: An implicit coercion from type Type<gw.lang.Deprecated> to java.lang.String occurs here.  Consider making this explicit with an "as java.lang.String". [line:-17149 col:15] in
+line 1: 
+Compiling libraries.ABContactEnhancement...
+Compiling libraries.RelatedContactsSorting...
+Compiling gw.wsi.pl.ZoneImportAPI...
+Compiling gw.webservice.ab.ab800.abvendorevaluationapi.ABVendorEvaluationAPIReviewSummary...
+Compiling gw.webservice.ab.ab800.abcontactapi.ABContactAPIAddressSearch...
+Compiling gw.webservice.ab.ab800.abcontactapi.ABContactAPIFindDuplicatesResult...
+Compiling gw.webservice.ab.ab800.abcontactapi.ABContactAPIPendingContactChange...
+Compiling gw.webservice.ab.ab800.abcontactapi.ABContactAPISearchCriteria...
+Compiling gw.webservice.ab.ab800.abcontactapi.ABContactAPISearchResult...
+Compiling gw.webservice.ab.ab800.abcontactapi.AddressInfo...
+Warning: An implicit coercion from type java.lang.Boolean to java.lang.String occurs here.  Consider making this explicit with an "as java.lang.String". [line:-1517 col:18] in
+line 1: 
+Compiling gw.webservice.ab.ab700.reviewsummary.IReviewSummaryAPI...
+Warning: RpcWebService(typekey.SystemPermissionType[]) in RpcWebService has been deprecated. [line:-397 col:1] in
+line 1: 
+Compiling gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult...
+Warning: Exact in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1332 col:5] in
+line 1: 
+Warning: LinkID in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1365 col:5] in
+line 1: 
+Warning: ContactType in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1402 col:5] in
+line 1: 
+Warning: Name in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1445 col:5] in
+line 1: 
+Warning: FirstName in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1507 col:7] in
+line 1: 
+Warning: LastName in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1547 col:7] in
+line 1: 
+Warning: MiddleName in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1585 col:7] in
+line 1: 
+Warning: Prefix in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1627 col:7] in
+line 1: 
+Warning: Suffix in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1666 col:7] in
+line 1: 
+Warning: CellPhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1705 col:7] in
+line 1: 
+Warning: mapPhoneValues(java.lang.String, typekey.PhoneCountryCode, java.lang.String) : String in Type<gw.webservice.contactapi.ab700.ContactMappingPhoneUtil> has been deprecated. [line:-1705 col:24] in
+line 1: 
+Warning: DateOfBirth in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1839 col:7] in
+line 1: 
+Warning: EmailAddress1 in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1892 col:5] in
+line 1: 
+Warning: EmailAddress2 in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1938 col:5] in
+line 1: 
+Warning: PrimaryPhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-1984 col:5] in
+line 1: 
+Warning: FaxPhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-2033 col:5] in
+line 1: 
+Warning: mapPhoneValues(java.lang.String, typekey.PhoneCountryCode, java.lang.String) : String in Type<gw.webservice.contactapi.ab700.ContactMappingPhoneUtil> has been deprecated. [line:-2033 col:21] in
+line 1: 
+Warning: HomePhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-2161 col:5] in
+line 1: 
+Warning: mapPhoneValues(java.lang.String, typekey.PhoneCountryCode, java.lang.String) : String in Type<gw.webservice.contactapi.ab700.ContactMappingPhoneUtil> has been deprecated. [line:-2161 col:22] in
+line 1: 
+Warning: WorkPhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-2293 col:5] in
+line 1: 
+Warning: mapPhoneValues(java.lang.String, typekey.PhoneCountryCode, java.lang.String) : String in Type<gw.webservice.contactapi.ab700.ContactMappingPhoneUtil> has been deprecated. [line:-2293 col:22] in
+line 1: 
+Warning: Preferred in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-2425 col:5] in
+line 1: 
+Warning: VendorType in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-2463 col:5] in
+line 1: 
+Warning: Score in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-2508 col:5] in
+line 1: 
+Warning: TaxID in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-2538 col:5] in
+line 1: 
+Warning: PrimaryAddress in gw.webservice.ab.ab700.abcontactapi.ABContactAPIFindDuplicatesResult has been deprecated. [line:-2568 col:5] in
+line 1: 
+Warning: AddressInfo(entity.Address) in AddressInfo has been deprecated. [line:-2568 col:27] in
+line 1: 
+Compiling gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult...
+Warning: LinkID in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1256 col:5] in
+line 1: 
+Warning: ContactType in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1293 col:5] in
+line 1: 
+Warning: Name in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1336 col:5] in
+line 1: 
+Warning: FirstName in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1398 col:7] in
+line 1: 
+Warning: LastName in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1438 col:7] in
+line 1: 
+Warning: MiddleName in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1476 col:7] in
+line 1: 
+Warning: Prefix in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1518 col:7] in
+line 1: 
+Warning: Suffix in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1557 col:7] in
+line 1: 
+Warning: CellPhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1596 col:7] in
+line 1: 
+Warning: mapPhoneValues(java.lang.String, typekey.PhoneCountryCode, java.lang.String) : String in Type<gw.webservice.contactapi.ab700.ContactMappingPhoneUtil> has been deprecated. [line:-1596 col:24] in
+line 1: 
+Warning: DateOfBirth in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1730 col:7] in
+line 1: 
+Warning: EmailAddress1 in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1783 col:5] in
+line 1: 
+Warning: EmailAddress2 in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1829 col:5] in
+line 1: 
+Warning: PrimaryPhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1875 col:5] in
+line 1: 
+Warning: FaxPhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-1924 col:5] in
+line 1: 
+Warning: mapPhoneValues(java.lang.String, typekey.PhoneCountryCode, java.lang.String) : String in Type<gw.webservice.contactapi.ab700.ContactMappingPhoneUtil> has been deprecated. [line:-1924 col:21] in
+line 1: 
+Warning: HomePhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-2052 col:5] in
+line 1: 
+Warning: mapPhoneValues(java.lang.String, typekey.PhoneCountryCode, java.lang.String) : String in Type<gw.webservice.contactapi.ab700.ContactMappingPhoneUtil> has been deprecated. [line:-2052 col:22] in
+line 1: 
+Warning: WorkPhone in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-2184 col:5] in
+line 1: 
+Warning: mapPhoneValues(java.lang.String, typekey.PhoneCountryCode, java.lang.String) : String in Type<gw.webservice.contactapi.ab700.ContactMappingPhoneUtil> has been deprecated. [line:-2184 col:22] in
+line 1: 
+Warning: Preferred in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-2316 col:5] in
+line 1: 
+Warning: VendorType in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-2354 col:5] in
+line 1: 
+Warning: Score in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-2399 col:5] in
+line 1: 
+Warning: TaxID in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-2429 col:5] in
+line 1: 
+Warning: PrimaryAddress in gw.webservice.ab.ab700.abcontactapi.ABContactAPISearchResult has been deprecated. [line:-2459 col:5] in
+line 1: 
+Warning: AddressInfo(entity.Address) in AddressInfo has been deprecated. [line:-2459 col:27] in
+line 1: 
+Compiling gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo...
+Warning: ContactType in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1560 col:30] in
+line 1: 
+Warning: FirstName in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1606 col:30] in
+line 1: 
+Warning: Keyword in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1650 col:30] in
+line 1: 
+Warning: OrganizationName in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1692 col:30] in
+line 1: 
+Warning: PreferredVendors in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1743 col:30] in
+line 1: 
+Warning: TaxID in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1794 col:30] in
+line 1: 
+Warning: EmployeeNumber in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1834 col:30] in
+line 1: 
+Warning: Score in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1883 col:30] in
+line 1: 
+Warning: AdjudicativeDomain in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1923 col:30] in
+line 1: 
+Warning: AttorneySpecialty in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-1976 col:30] in
+line 1: 
+Warning: DoctorSpecialty in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2028 col:30] in
+line 1: 
+Warning: LawFirmSpecialty in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2078 col:30] in
+line 1: 
+Warning: MedicalOrgSpecialty in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2129 col:30] in
+line 1: 
+Warning: VendorType in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2183 col:30] in
+line 1: 
+Warning: AllTagsRequired in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2228 col:30] in
+line 1: 
+Warning: Address in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2569 col:47] in
+line 1: 
+Warning: ProximitySearchCenter in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2628 col:61] in
+line 1: 
+Warning: ProximitySearchParameters in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2715 col:75] in
+line 1: 
+Warning: Tags in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2820 col:9] in
+line 1: 
+Warning: Tags in gw.webservice.ab.ab700.abcontactapi.ABContactSearchCriteriaInfo has been deprecated. [line:-2848 col:23] in
+line 1: 
+Warning: City in gw.webservice.ab.ab700.abcontactapi.AddressSearchInfo has been deprecated. [line:-3111 col:28] in
+line 1: 
+Warning: State in gw.webservice.ab.ab700.abcontactapi.AddressSearchInfo has been deprecated. [line:-3147 col:29] in
+line 1: 
+Warning: PostalCode in gw.webservice.ab.ab700.abcontactapi.AddressSearchInfo has been deprecated. [line:-3185 col:34] in
+line 1: 
+Warning: Country in gw.webservice.ab.ab700.abcontactapi.AddressSearchInfo has been deprecated. [line:-3233 col:31] in
+line 1: 
+Warning: DistanceBasedSearch in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3408 col:34] in
+line 1: 
+Warning: Number in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3465 col:21] in
+line 1: 
+Warning: UnitOfDistance in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3496 col:29] in
+line 1: 
+Warning: GeocodeStatus in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3543 col:28] in
+line 1: 
+Warning: Longitude in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3588 col:27] in
+line 1: 
+Warning: Longitude in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3588 col:76] in
+line 1: 
+Warning: Latitude in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3588 col:92] in
+line 1: 
+Warning: SavedSearchCenter in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3693 col:32] in
+line 1: 
+Warning: CorrectedSearchCenter in gw.webservice.ab.ab700.abcontactapi.ProximitySearchParametersInfo has been deprecated. [line:-3746 col:36] in
+line 1: 
+Compiling gw.webservice.ab.ab700.abcontactapi.AddressInfo...
+Warning: LinkID in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1000 col:5] in
+line 1: 
+Warning: AddressLine1 in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1032 col:5] in
+line 1: 
+Warning: AddressLine2 in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1076 col:5] in
+line 1: 
+Warning: AddressLine3 in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1120 col:5] in
+line 1: 
+Warning: City in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1164 col:5] in
+line 1: 
+Warning: State in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1192 col:5] in
+line 1: 
+Warning: PostalCode in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1240 col:5] in
+line 1: 
+Warning: Country in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1280 col:5] in
+line 1: 
+Warning: County in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1319 col:5] in
+line 1: 
+Warning: Description in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1351 col:5] in
+line 1: 
+Warning: AddressType in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1393 col:5] in
+line 1: 
+Warning: ValidUntil in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1440 col:5] in
+line 1: 
+Warning: Latitude in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1484 col:5] in
+line 1: 
+Warning: Longitude in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1520 col:5] in
+line 1: 
+Warning: GeocodeStatus in gw.webservice.ab.ab700.abcontactapi.AddressInfo has been deprecated. [line:-1558 col:5] in
+line 1: 
+Compiling gw.webservice.ab.ab700.abcontactapi.AddressSearchInfo...
+Compiling gw.web.merge.MergeContactsWebUtil...
+Compiling gw.web.contacts.merge.MergeContactsWebUtil...
+Warning: MergeContactsWebUtil() in MergeContactsWebUtil has been deprecated. [line:-486 col:70] in
+line 1: 
+Warning: AddressDataByAddress in gw.web.contacts.merge.MergeContactsAddressHolder has been deprecated. [line:-2347 col:32] in
+line 1: 
+Warning: PrimaryAddress in gw.web.contacts.merge.MergeContactsAddressHolder has been deprecated. [line:-2416 col:36] in
+line 1: 
+Warning: KeptContactRelatedContacts in gw.web.contacts.merge.MergeContactsLinkedContactsHolder has been deprecated. [line:-6213 col:5] in
+line 1: 
+Warning: RetiredContactRelatedContacts in gw.web.contacts.merge.MergeContactsLinkedContactsHolder has been deprecated. [line:-6355 col:5] in
+line 1: 
+Warning: KeptContactData in gw.web.contacts.merge.MergeContactsEFTDataHolder has been deprecated. [line:-6763 col:5] in
+line 1: 
+Warning: RetiredContactData in gw.web.contacts.merge.MergeContactsEFTDataHolder has been deprecated. [line:-6867 col:5] in
+line 1: 
+Compiling gw.web.ContactDetailsVendorHelper...
+Compiling gw.web.PendingChangesWebUtil...
+Warning: This appears to be an attempt to do a java-style cast, which is not correct Gosu.  To cast an expression to another type put "as entity.PendingContactUpdate" after the expression [line:-4605 col:26] in
+line 1: 
+Compiling gw.plugin.phone.DefaultABPhoneNormalizerPlugin...
+Compiling gw.plugin.geocode.impl.BingMapsPlugin...
+Compiling gw.plugin.contact.findduplicates.querybuilder.CompanyQueryBuilder...
+Compiling gw.plugin.contact.findduplicates.querybuilder.ContactQueryBuilder...
+Compiling gw.plugin.contact.findduplicates.querybuilder.PersonQueryBuilderBase...
+Compiling gw.plugin.contact.findduplicates.querybuilder.PlaceQueryBuilder...
+Compiling gw.plugin.contact.findduplicates.querybuilder.UserContactQueryBuilder...
+Compiling gw.plugin.contact.findduplicates.DuplicateFinderBase...
+Compiling gw.plugin.contact.findduplicates.FindDuplicatesPlugin...
+Warning: gw.api.webservice.addressbook.contactapi.ABContactAPISearchResultHelper in gw.api.webservice.addressbook.contactapi.ABContactAPISearchResultHelper has been deprecated. [line:-246 col:6] in
+line 1: 
+Warning: gw.api.webservice.addressbook.contactapi.ABContactAPISearchSpec in gw.api.webservice.addressbook.contactapi.ABContactAPISearchSpec has been deprecated. [line:-322 col:6] in
+line 1: 
+Warning: toABContactAPISearchResultHelper() : ABContactAPISearchResultHelper in gw.api.webservice.addressbook.contactapi.ABContactSearchResult has been deprecated. [line:-2519 col:12] in
+line 1: 
+Compiling gw.plugin.contact.ValidateABContactCreationPluginImpl...
+Compiling gw.plugin.contact.ValidateABContactSearchCriteriaPluginImpl...
+Compiling gw.entity.GWABContactAddressOwnerEnhancement...
+Compiling gw.entity.GWContactAddressOwnerEnhancement...
+Compiling gw.entity.GWStateEnhancement...
+Compiling gw.contactmapper.ab800.ContactMapper...
+Compiling gw.contactmapper.ab700.ContactIntegrationXMLMapper...
+Warning: ContactIntegrationXMLMapper() in ContactIntegrationXMLMapper has been deprecated. [line:-713 col:64] in
+line 1: 
+Compiling gw.api.user.GWUserEnhancement...
+Compiling gw.api.name.ABContactNameDelegate...
+Compiling gw.api.data.DataSets...
+Compiling gw.api.contact.ABAddressUtil...
+Compiling gw.api.address.ABContactPrimaryAddressOwner...
+Compiling gw.api.address.AbstractAddressOwner...
+Compiling gw.api.address.AddressAutofillHelper...
+Warning: The type "STATE" is not referenced by the proper case.  Please change this reference to "State". [line:-2453 col:31] in
+line 1: 
+Compiling gw.api.address.AddressCountrySettings...
+Compiling gw.api.address.AddressEntityDelegate...
+Compiling gw.api.address.AddressFillableExtensionImpl...
+Compiling gw.api.address.AddressFormatter...
+Compiling gw.api.address.AddressJurisdictionHandler...
+Compiling gw.api.address.AddressOwner...
+Compiling gw.api.address.AddressOwnerBase...
+Compiling gw.api.address.PostalCodeInputFormatter...
+Compiling gw.api.address.SearchAddressOwner...
+Compiling gw.api.address.SearchProximityAddressOwner...
+Compiling gw.api.address.SecondaryAddressOwner...
+Compiling acme.ta.webservice.contact.ContactAPI...
+Compiling acme.ta.messaging.vendorrecommendation.VendorRecommendationTransport...
+Compiling acme.ta.messaging.legalreport.LegalReportAPI...
+Compiling acme.ta.batch.legalreport.FlagOverdueLegalReportsBatch...
+Compiling rules.Validation.ABContactValidationRules_dir.DefaultValidationRules_dir.RequirePastDOB...
+Compiling rules.Validation.ABContactValidationRules_dir.DefaultValidationRules_dir.RequirePhoneCountryCode...
+Warning: This expression is already of type ABPerson so casting it to ABPerson is unnecessary. [line:-366 col:34] in
+line 1: 
+Warning: This expression is already of type ABPerson so casting it to ABPerson is unnecessary. [line:-1356 col:18] in
+line 1: 
+Compiling rules.Validation.ABContactValidationRules_dir.DefaultValidationRules_dir.RequirePhoneNumber...
+Compiling rules.Validation.ABContactValidationRules_dir.DefaultValidationRules_dir.RequirePrimaryNumber...
+Compiling rules.Validation.ABContactValidationRules_dir.DefaultValidationRules_dir.RequireValidPhoneCountry...
+Warning: This expression is already of type ABPerson so casting it to ABPerson is unnecessary. [line:-346 col:34] in
+line 1: 
+Warning: This expression is already of type ABPerson so casting it to ABPerson is unnecessary. [line:-1293 col:18] in
+line 1: 
+Compiling rules.Validation.ABContactValidationRules_dir.DefaultValidationRules...
+Compiling rules.Validation.ABContactValidationRules...
+Compiling rules.Preupdate.PendingContactChangePreupdate_dir.PendingCreateRejection...
+Compiling rules.Preupdate.PendingContactChangePreupdate_dir.PendingUpdateRejection...
+Compiling rules.Preupdate.AddressPreupdate_dir.ContactPrimaryAddressAddedHistoryEvent...
+Compiling rules.Preupdate.AddressPreupdate_dir.ContactPrimaryAddressEditedHistoryEvent...
+Compiling rules.Preupdate.AddressPreupdate_dir.ContactSecondaryAddressAddedHistoryEvent...
+Compiling rules.Preupdate.AddressPreupdate_dir.ContactSecondaryAddressEditedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.NameUpdatedHistoryEvent_dir.NonPerson...
+Compiling rules.Preupdate.ABContactPreupdate_dir.NameUpdatedHistoryEvent_dir.Person...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU2000SubtypeABPerson_dir.ABPU2010Flaglackofemailaddress...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU1000SubtypeABContact_dir.ABPU1010Contactcreated...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU1000SubtypeABContact_dir.ABPU1020Assigneduserchanged...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU1000SubtypeABContact_dir.ABPU1030Flaginvalidaddress...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU1000SubtypeABContact_dir.ABPU1040Unverifychangedbankaccounts...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU1000SubtypeABContact...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU2000SubtypeABPerson...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU3000SubtypeABVendor...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ABPU4000SubtypeABLawFirm...
+Warning: Prior case clause is non-terminal; possible missing break, continue, or return statement [line:31 col:5] in
+line 30: 			 hourlyRate = 262
+line 31: 		  case LegalSpecialty.TC_WORKERSCOMP:
+line 32: 			 hourlyRate = 319
+Warning: Prior case clause is non-terminal; possible missing break, continue, or return statement [line:33 col:5] in
+line 32: 			 hourlyRate = 319
+line 33: 		  case LegalSpecialty.TC_MOTORVEHLIABILITY:
+line 34: 			hourlyRate = 295
+Warning: Prior case clause is non-terminal; possible missing break, continue, or return statement [line:35 col:5] in
+line 34: 			hourlyRate = 295
+line 35: 		  case LegalSpecialty.TC_PERSONALINJURY:
+line 36: 			hourlyRate = 333
+Warning: Prior case clause is non-terminal; possible missing break, continue, or return statement [line:37 col:5] in
+line 36: 			hourlyRate = 333
+line 37: 		  default:
+line 38: 			hourlyRate = 284
+Compiling rules.Preupdate.ABContactPreupdate_dir.CellPhoneChangedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.ContactCreatedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.FaxPhoneChangedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.HomePhoneChangedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.NameUpdatedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.PendingContactCreateHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.PrimaryAddressChangedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.PrimaryAddressRemovedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.PrimaryPhoneTypeChangedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.RelatedContactRemovedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.SecondaryAddressRemovedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate_dir.SetVendorsPrimaryAddressBatchGeocode...
+Compiling rules.Preupdate.ABContactPreupdate_dir.WorkPhoneChangedHistoryEvent...
+Compiling rules.Preupdate.ABContactContactPreupdate_dir.ABContactContactAddedHistoryEvent...
+Compiling rules.Preupdate.ABContactPreupdate...
+Compiling rules.EventMessage.EventFired_dir.PolicyCenter_dir.Contact_dir.PendingChangeRejected...
+Compiling rules.EventMessage.EventFired_dir.PolicyCenter_dir.Contact_dir.Remove...
+Compiling rules.EventMessage.EventFired_dir.PolicyCenter_dir.Contact_dir.Update...
+Compiling rules.EventMessage.EventFired_dir.LREF1000LegalCaseReport_dir.LREF1100ABContact_dir.LREF1110ReportRequested...
+Compiling rules.EventMessage.EventFired_dir.LREF1000LegalCaseReport_dir.LREF1100ABContact...
+Compiling rules.EventMessage.EventFired_dir.ClaimCenter_dir.Contact_dir.PendingChangeRejected...
+Compiling rules.EventMessage.EventFired_dir.ClaimCenter_dir.Contact_dir.Remove...
+Compiling rules.EventMessage.EventFired_dir.ClaimCenter_dir.Contact_dir.Update...
+Compiling rules.EventMessage.EventFired_dir.ClaimCenter_dir.Contact...
+Compiling rules.EventMessage.EventFired_dir.BillingCenter_dir.Contact_dir.PendingChangeRejected...
+Compiling rules.EventMessage.EventFired_dir.BillingCenter_dir.Contact_dir.Remove...
+Compiling rules.EventMessage.EventFired_dir.BillingCenter_dir.Contact_dir.Update...
+Compiling rules.EventMessage.EventFired_dir.BAEF1000BankAccountVerification_dir.BAEF1100BankAccount_dir.BAEF1110AddedChanged_dir.BAEF1111FieldChanged...
+Compiling rules.EventMessage.EventFired_dir.ABEF1000VendorRecommendation_dir.ABEF1100ABContact_dir.ABEF1110Recommended...
+Compiling rules.EventMessage.EventFired_dir.ABEF1000VendorRecommendation_dir.ABEF1100ABContact...
+Compiling -> 31363ms

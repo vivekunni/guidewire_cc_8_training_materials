@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../pcf.xsd">
+  <ListViewPanel
+    id="ABCompanyEmployeesLV">
+    <Require
+      name="anABContact"
+      type="ABContact"/>
+    <RowIterator
+      editable="false"
+      elementName="currentEmployee"
+      value="(anABContact as ABCompany).Employees"
+      visible="anABContact typeis ABCompany">
+      <IteratorSort
+        sortBy="currentEmployee.LastName"
+        sortOrder="1"/>
+      <Row
+        editable="true">
+        <Cell
+          action="ABContactSummaryPage.go(currentEmployee)"
+          id="Name"
+          label="displaykey.Training.Name"
+          value="currentEmployee.DisplayName"/>
+        <Cell
+          id="Occupation"
+          label="displaykey.Training.JobTitle"
+          value="currentEmployee.Occupation"/>
+        <Cell
+          id="emailAddress"
+          label="displaykey.Training.EmailAddress"
+          value="currentEmployee.EmailAddress1"/>
+      </Row>
+    </RowIterator>
+    <Code><![CDATA[// The logic to determine if the PrefersContactByEmail field should be editable must check to see if anABContact is a company,
+// and if so, if the primary contact is non-null. If you attempt to do both checks in a single line, then you get a coercion error.
+// (This is because the check for a primary contact works only if the contact is an ABCompany.) This function simply splits the
+// logic into two lines.
+
+function PrefersContactByEmailEditable() : boolean {
+  var returnValue =false
+
+  CurrentLocation.startEditing()
+  for(currentEmp in (anABContact as ABCompany).Employees)
+    if(currentEmp.EmailAddress1 == null)    {
+      currentEmp.EmailAddress1 = (anABContact as ABCompany).EmailAddress1
+    }
+  CurrentLocation.commit()
+                           
+  if (anABContact typeis ABCompany)
+    if (anABContact.PrimaryContact != null)  // typeis automatically downcasts object; casting isn't needed here
+      returnValue = true
+  return returnValue
+}]]></Code>
+  </ListViewPanel>
+</PCF>

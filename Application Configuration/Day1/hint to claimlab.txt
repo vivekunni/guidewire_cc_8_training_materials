@@ -1,0 +1,5 @@
+Instructions for displaying answer sheet for The Claims Process lesson:
+
+1. Right-click the Terms tab at the bottom of the worksheet.
+2. Select Unhide.
+3. When the Unhide popup opens, Answers is selected. Click OK.

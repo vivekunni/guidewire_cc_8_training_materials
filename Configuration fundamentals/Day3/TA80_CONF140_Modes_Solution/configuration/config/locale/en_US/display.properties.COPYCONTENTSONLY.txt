@@ -1,0 +1,10 @@
+-- NOTE!!!
+-- Copy the display keys below to your display.properties file
+-- ...\configuration\config\locale\en_US\display.properties
+
+Ext.Network = Network Information
+Ext.NetworkMember = Network Member
+Ext.NetworkName = Network Name
+Ext.AutoFranchiseInfo = Auto Franchise Info
+Ext.Towing = Towing Provider
+Ext.FranchiseCheck = Franchise?

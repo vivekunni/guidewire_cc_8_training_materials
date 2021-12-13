@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<wsdl:definitions targetNamespace="http://example.com/external/VehicleWsiAPI" name="VehicleWsiAPI" xmlns:gwsoap="http://guidewire.com/ws/soapheaders" xmlns:gwwsdl="http://guidewire.com/pl/wsdl" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://example.com/external/VehicleWsiAPI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://example.com/external/VehicleWsiAPI" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://guidewire.com/ws/soapheaders" schemaLocation="soapheaders.xsd"/>
+      <xs:element name="verifyVehicle">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="VIN" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="verifyVehicleResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WebServiceException">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="WsiAuthenticationException">
+        <xs:complexType/>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:portType name="VehicleWsiAPIPortType">
+    <wsdl:operation name="verifyVehicle">
+      <wsdl:input name="verifyVehicle" message="tns:verifyVehicle"/>
+      <wsdl:output name="verifyVehicleResponse" message="tns:verifyVehicleResponse"/>
+      <wsdl:fault name="WebServiceException" message="tns:WebServiceException"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VehicleWsiAPISoap12Binding" type="tns:VehicleWsiAPIPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="verifyVehicle">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="verifyVehicle">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verifyVehicleResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap12:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VehicleWsiAPISoap11Binding" type="tns:VehicleWsiAPIPortType">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="verifyVehicle">
+      <soap11:operation style="document"/>
+      <wsdl:input name="verifyVehicle">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verifyVehicleResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap11:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VehicleWsiAPI">
+    <wsdl:port name="VehicleWsiAPISoap12Port" binding="tns:VehicleWsiAPISoap12Binding">
+      <soap12:address location="http://localhost:9990/ab/ws/external/VehicleWsiAPI"/>
+      <gwwsdl:address location="${ab}/ws/external/VehicleWsiAPI"/>
+    </wsdl:port>
+    <wsdl:port name="VehicleWsiAPISoap11Port" binding="tns:VehicleWsiAPISoap11Binding">
+      <soap11:address location="http://localhost:9990/ab/ws/external/VehicleWsiAPI/soap11"/>
+      <gwwsdl:address location="${ab}/ws/external/VehicleWsiAPI/soap11"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:message name="verifyVehicle">
+    <wsdl:part name="parameters" element="tns:verifyVehicle"/>
+  </wsdl:message>
+  <wsdl:message name="verifyVehicleResponse">
+    <wsdl:part name="parameters" element="tns:verifyVehicleResponse"/>
+  </wsdl:message>
+  <wsdl:message name="WebServiceException">
+    <wsdl:part name="WebServiceException" element="tns:WebServiceException"/>
+  </wsdl:message>
+  <wsdl:message name="WsiAuthenticationException">
+    <wsdl:part name="WsiAuthenticationException" element="tns:WsiAuthenticationException"/>
+  </wsdl:message>
+  <wsdl:message name="gw-authentication">
+    <wsdl:part name="gw-authentication" element="gwsoap:authentication"/>
+  </wsdl:message>
+  <wsdl:message name="gw-locale">
+    <wsdl:part name="gw-locale" element="gwsoap:locale"/>
+  </wsdl:message>
+</wsdl:definitions>

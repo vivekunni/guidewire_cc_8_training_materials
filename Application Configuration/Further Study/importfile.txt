@@ -1,0 +1,45 @@
+PERSON,,,,
+type,data-set,entityid,firstname,lastname
+UserContact,0,config_usercontact:1,Adam,TestUser
+UserContact,0,config_usercontact:2,Brad,TestUser
+UserContact,0,config_usercontact:3,Cleo,TestUser
+UserContact,0,config_usercontact:4,Dawn,TestUser
+UserContact,0,config_usercontact:5,Erma,TestUser
+UserContact,0,config_usercontact:6,Fred,TestUser
+
+CREDENTIALS,,,,
+type,data-set,entityid,password,username
+Credential,0,config_credential:1,PPNxQmp1UdWbZrn2G1Tj8+w01rI=,testuser1
+Credential,0,config_credential:2,PPNxQmp1UdWbZrn2G1Tj8+w01rI=,testuser2
+Credential,0,config_credential:3,PPNxQmp1UdWbZrn2G1Tj8+w01rI=,testuser3
+Credential,0,config_credential:4,PPNxQmp1UdWbZrn2G1Tj8+w01rI=,testuser4
+Credential,0,config_credential:5,PPNxQmp1UdWbZrn2G1Tj8+w01rI=,testuser5
+Credential,0,config_credential:6,PPNxQmp1UdWbZrn2G1Tj8+w01rI=,testuser6,,,,,,
+
+USERS,,,,,,,,,,
+type,data-set,entityid,contact,credential,experiencelevel,externaluser,roles,authorityprofile,usersettings,language
+User,0,config_user:1,config_usercontact:1,config_credential:1,,FALSE,UserRole|role[adjuster],default_data:1,config_userset:1,en_US
+User,0,config_user:2,config_usercontact:2,config_credential:2,,FALSE,UserRole|role[adjuster],default_data:1,config_userset:2,en_US
+User,0,config_user:3,config_usercontact:3,config_credential:3,,FALSE,UserRole|role[adjuster],default_data:1,config_userset:3,en_US
+User,0,config_user:4,config_usercontact:4,config_credential:4,,FALSE,UserRole|role[adjuster],default_data:1,config_userset:4,en_US
+User,0,config_user:5,config_usercontact:5,config_credential:5,,FALSE,UserRole|role[adjuster],default_data:1,config_userset:5,en_US
+User,0,config_user:6,config_usercontact:6,config_credential:6,,FALSE,UserRole|role[adjuster],default_data:1,config_userset:6,en_US
+
+USERSETTINGS,,,,,,,,,,
+type,data-set,entityid,startuppage,,,,,,,
+UserSettings,0,config_userset:1,DesktopActivities,,,,,,,
+UserSettings,0,config_userset:2,DesktopActivities,,,,,,,
+UserSettings,0,config_userset:3,DesktopActivities,,,,,,,
+UserSettings,0,config_userset:4,DesktopActivities,,,,,,,,
+UserSettings,0,config_userset:5,DesktopActivities,,,,,,,,
+UserSettings,0,config_userset:6,DesktopActivities,,,,,,,,
+
+GROUPS,,,,,,,,,,,
+type,data-set,entityid,grouptype,name,parent,securityzone,supervisor,visibilityzone,worldvisible,regions,users
+Group,0,config_groups:1,theftcomplex,Complex Thefts - West,demo_sample:26,default_data:1,demo_sample:3,demo_sample:26,TRUE,GroupRegion|region[demo_sample:1],"GroupUser|user[config_user:1,config_user:2]"
+Group,0,config_groups:2,theftcomplex,Complex Thefts - East,demo_sample:40,default_data:1,demo_sample:3,demo_sample:40,TRUE,GroupRegion|region[demo_sample:2],"GroupUser|user[config_user:3,config_user:4]"
+Group,0,config_groups:3,theftsimple,Simple Thefts - West,demo_sample:26,default_data:1,demo_sample:3,demo_sample:26,TRUE,GroupRegion|region[demo_sample:1],"GroupUser|user[config_user:5,config_user:6]"
+
+QUEUES,,,,,,,,,,,
+type,data-set,entityid,name,description,group,subgroupvisible,,,,,
+AssignableQueue,0,config_queue:1,Theft Statements,Theft Statements,config_groups:3,TRUE,,,,,

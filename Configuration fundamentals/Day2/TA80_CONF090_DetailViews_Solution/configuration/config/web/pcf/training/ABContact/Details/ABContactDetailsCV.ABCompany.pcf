@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../../pcf.xsd">
+  <CardViewPanel
+    id="ABContactDetailsCV"
+    mode="ABCompany|ABCompanyVendor|ABMedicalCareOrg|ABAutoRepairShop|ABAutoTowingAgcy|ABLawFirm|ABPolicyCompany">
+    <Require
+      name="anABContact"
+      type="ABContact"/>
+    <Card
+      id="CompanyInfoCard"
+      title="displaykey.Training.CompanyInfoCard"
+      visible="anABContact typeis ABCompany">
+      <PanelRef
+        def="ABContactDetailsCompanyDV(anABContact)"
+        id="ABContactDetailsCompanyDV"/>
+    </Card>
+    <Card
+      id="PhoneAddressesCard"
+      title="displaykey.Training.PhoneAddressesCard">
+      <DetailViewPanel
+        editable="true"
+        id="PhoneAndAddressesDV">
+        <InputColumn>
+          <Label
+            id="Phone"
+            label="displaykey.Training.PhoneNumbers"/>
+          <InputSetRef
+            def="GlobalPhoneInputSet(new gw.api.phone.StandardPhoneOwner(new gw.api.phone.ContactPhoneDelegate(anABContact, ABContact#WorkPhone), displaykey.Web.ContactDetail.Phone.Work, false))"
+            id="WorkPhone"/>
+          <InputSetRef
+            def="GlobalPhoneInputSet(new gw.api.phone.StandardPhoneOwner(new gw.api.phone.ContactPhoneDelegate(anABContact, ABContact#FaxPhone), displaykey.Web.ContactDetail.Phone.Fax, false))"
+            id="FaxPhone"/>
+          <Label
+            id="PrimaryAddress"
+            label="displaykey.Training.PrimaryAddress"/>
+          <InputSetRef
+            def="AddressOwnerInputSet(anABContact.AddressOwner, true)"
+            id="BasicAddressInputSet"/>
+          <!-- <InputSetRef
+            def="EmailAddressesInputSet(anABContact)"/> -->
+        </InputColumn>
+      </DetailViewPanel>
+    </Card>
+    <Card
+      id="BankAccountsCard"
+      title="displaykey.Training.BankAccounts">
+      <PanelRef
+        def="BankAccountsLV(anABContact)">
+        <Toolbar>
+          <IteratorButtons
+            iterator="BankAccountsLV.BankAccountsLV"/>
+        </Toolbar>
+      </PanelRef>
+    </Card>
+    <Card
+      id="FinancialSummaryCard"
+      title="displaykey.Training.FinancialSummary"
+      visible="(anABContact typeis ABPolicyPerson) or (anABContact typeis ABPolicyCompany)">
+      <DetailViewPanel>
+        <InputColumn>
+          <Label
+            id="PremiumLabel"
+            label="displaykey.Training.Premium"/>
+          <Input
+            editable="true"
+            id="TotalPolicyPremiumBilled"
+            label="displaykey.Training.TotalPolicyPremiumBilled"
+            value="anABContact.FinancialSummary.TotalPolicyPremiumBilled"/>
+          <Input
+            editable="true"
+            id="TotalPolicyPremiumPaid"
+            label="displaykey.Training.TotalPolicyPremiumPaid"
+            value="anABContact.FinancialSummary.TotalPolicyPremiumPaid"/>
+          <Input
+            editable="true"
+            id="TotalPolicyPremiumRefunded"
+            label="displaykey.Training.TotalPolicyPremiumRefunded"
+            value="anABContact.FinancialSummary.TotalPolicyPremiumRefunded"/>
+          <Label
+            id="ClaimPaymentsLabel"
+            label="displaykey.Training.ClaimPayments"/>
+          <Input
+            editable="true"
+            id="TotalClaimPaymentsMade"
+            label="displaykey.Training.TotalClaimPaymentsMade"
+            value="anABContact.FinancialSummary.TotalClaimPaymentsMade"/>
+          <Input
+            editable="true"
+            id="NumberOfClaims"
+            label="displaykey.Training.NumberOfClaims"
+            value="anABContact.FinancialSummary.NumberOfClaims"/>
+          <Input
+            editable="true"
+            id="MostRecentClaim"
+            label="displaykey.Training.MostRecentClaim"
+            value="anABContact.FinancialSummary.MostRecentClaim"/>
+        </InputColumn>
+      </DetailViewPanel>
+    </Card>
+    <Card
+      id="VendorInfoCard"
+      title="displaykey.Training.VendorInfoCard"
+      visible="(anABContact typeis ABPersonVendor) or (anABContact typeis ABCompanyVendor)">
+      <PanelRef>
+        <DetailViewPanel>
+          <InputColumn>
+            <Label
+              id="IsRecommended"
+              label="displaykey.Training.ThisVenderIsRecommendedByAcme"
+              visible="anABContact.IsVendorRecommended"/>
+            <Input
+              id="VendorProfileCode"
+              label="displaykey.Training.VendorProfileCode"
+              value="anABContact.VendorProfileCode"
+              visible="anABContact.VendorProfileCode != null"/>
+          </InputColumn>
+        </DetailViewPanel>
+      </PanelRef>
+      <PanelRef
+        def="VendorEvaluationsLV(anABContact)"
+        editable="true">
+        <Toolbar>
+          <IteratorButtons
+            iterator="VendorEvaluationsLV.VendorEvaluationsLV"/>
+          <ToolbarButton
+            action="toggleVendorRecommendedFlag()"
+            available="!CurrentLocation.InEditMode"
+            id="RecommendVendorButton"
+            label="anABContact.IsVendorRecommended ? displaykey.Training.UnrecommendVendor : displaykey.Training.RecommendVendor"/>
+        </Toolbar>
+      </PanelRef>
+    </Card>
+    <Card
+      id="AnalysisCard"
+      title="displaykey.Training.Analysis">
+      <PanelRef
+        def="ABContactAnalysisDV(anABContact)"/>
+    </Card>
+    <Code><![CDATA[uses gw.api.util.DisplayableException
+
+/* This function toggles the recommended status of a vendor. If the vendor
+   is not recommended (and it has at least one evaluation), then the vendor
+   is recommended and the custom "ABContactRecommended" event is added. (This
+   event triggers a messaging integration point.) If the vendor is recommended,
+   then this function unrecommends the vendor and clears out any profile code
+   received from the integration point.
+*/
+   function toggleVendorRecommendedFlag() : void {
+      // create new bundle
+      gw.transaction.Transaction.runWithNewBundle(\ bundle -> {
+         var thisVendor = bundle.add(anABContact)
+
+         if (thisVendor.IsVendorRecommended) {
+            // If vendor is already recommended, switch flag to not 
+            // recommended and clear out profile code                    
+            thisVendor.IsVendorRecommended = false
+            thisVendor.VendorProfileCode = null
+       
+            } else {
+               // If vendor is not recommended, verify that there is
+               // at least one evaluation                           
+                  if (thisVendor.VendorEvaluations.length == 0) {
+                     throw new DisplayableException(displaykey.Training.NoEvaluations)
+          
+               } else {
+                  // Vendor is not yet recommendeded and has at least one eval!
+                  // calculate sum of eval scores                   
+                  var evaluationSum = 0
+                  for (thisEvaluation in anABContact.VendorEvaluations) {
+                     evaluationSum = evaluationSum + thisEvaluation.TotalScore
+                     }             
+                  // switch flag to recommended and sent evaluations to external vendor
+                  thisVendor.IsVendorRecommended = true
+                  thisVendor.addEvent("ABContactRecommended")
+                  thisVendor.VendorProfileCode = "(pending)"
+                  } // end 
+               }
+      
+         // runWithNewBundle() inherently commits the data              
+         })
+    
+   } // end of function]]></Code>
+  </CardViewPanel>
+</PCF>

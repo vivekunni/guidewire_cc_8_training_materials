@@ -1,0 +1,6 @@
+var testContact = ta.QueryUtil.findContact("ab:5")
+
+var newSummary = new acmelab.ta.classes.ABContactSummary()
+newSummary.initializeExternalID()
+newSummary.loadSummaryData(testContact)
+newSummary.saveSummaryNote()

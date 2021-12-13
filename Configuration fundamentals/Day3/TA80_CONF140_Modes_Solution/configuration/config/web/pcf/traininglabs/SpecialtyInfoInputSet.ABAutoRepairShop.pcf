@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="pcf.xsd">
+  <InputSet
+    id="SpecialtyInfoInputSet"
+    mode="ABAutoRepairShop">
+    <Require
+      name="anABContact"
+      type="ABContact"/>
+    <Label
+      id="AutoFranchiseInfo"
+      label="displaykey.Ext.AutoFranchiseInfo"/>
+    <Input
+      editable="true"
+      id="Franchise"
+      label="displaykey.Ext.FranchiseCheck"
+      value="(anABContact as ABAutoRepairShop).IsFranchise"/>
+    <Input
+      editable="true"
+      id="Towing"
+      label="displaykey.Ext.Towing"
+      value="(anABContact as ABAutoRepairShop).TowingProvider"/>
+  </InputSet>
+</PCF>

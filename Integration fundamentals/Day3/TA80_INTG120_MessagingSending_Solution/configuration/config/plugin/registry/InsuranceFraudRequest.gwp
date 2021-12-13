@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<plugin
+  interface="MessageRequest"
+  name="InsuranceFraudRequest">
+  <plugin-gosu
+    gosuclass="acmelab.ta.messaging.fraud.InsuranceFraudRequest"/>
+</plugin>

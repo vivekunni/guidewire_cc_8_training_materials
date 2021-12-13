@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<wsdl:definitions targetNamespace="http://example.com/external/pas/PolicyAPI" name="PolicyAPI" xmlns:gwsoap="http://guidewire.com/ws/soapheaders" xmlns:gwwsdl="http://guidewire.com/pl/wsdl" xmlns:pogo="http://example.com/external/pas" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://example.com/external/pas/PolicyAPI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema targetNamespace="http://example.com/external/pas/PolicyAPI" elementFormDefault="qualified" xmlns:gw="http://guidewire.com/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:import namespace="http://guidewire.com/ws/soapheaders" schemaLocation="soapheaders.xsd"/>
+      <xs:import namespace="http://example.com/external/pas"/>
+      <xs:element name="searchForHomeownersPolicies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="criteria" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="searchForHomeownersPoliciesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" minOccurs="0" gw:viewas="array">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="0" maxOccurs="unbounded" name="Entry" nillable="true" type="pogo:PASHomeownersPolicySummary"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WebServiceException">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="WsiAuthenticationException">
+        <xs:complexType/>
+      </xs:element>
+      <xs:element name="retrieveHomeownersPolicy">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="policyNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="lossDate" type="xs:dateTime" gw:type="java.util.Date" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrieveHomeownersPolicyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="searchForPersonalAutoPolicies">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="policyNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="policyHolderName" type="xs:string" minOccurs="0"/>
+            <xs:element name="lossDate" type="xs:dateTime" gw:type="java.util.Date" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="searchForPersonalAutoPoliciesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" minOccurs="0" gw:viewas="array">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element minOccurs="0" maxOccurs="unbounded" name="Entry" nillable="true" type="pogo:PASPersonalAutoPolicySummary"/>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrievePersonalAutoPolicy">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="policyNumber" type="xs:string" minOccurs="0"/>
+            <xs:element name="lossDate" type="xs:dateTime" gw:type="java.util.Date" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="retrievePersonalAutoPolicyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs:string" minOccurs="0"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <xs:schema targetNamespace="http://example.com/external/pas" elementFormDefault="qualified" xmlns:gw="http://guidewire.com/xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="PASHomeownersPolicySummary">
+        <xs:sequence>
+          <xs:element name="city" type="xs:string" minOccurs="0"/>
+          <xs:element name="effectiveFrom" type="xs:dateTime" gw:type="java.util.Date" minOccurs="0"/>
+          <xs:element name="effectiveTo" type="xs:dateTime" gw:type="java.util.Date" minOccurs="0"/>
+          <xs:element name="insuredName" type="xs:string" minOccurs="0"/>
+          <xs:element name="policyNumber" type="xs:string" minOccurs="0"/>
+          <xs:element name="policyType" type="xs:string" minOccurs="0"/>
+          <xs:element name="postalCode" type="xs:string" minOccurs="0"/>
+          <xs:element name="state" type="xs:string" minOccurs="0"/>
+          <xs:element name="streetLine1" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PASPersonalAutoPolicySummary">
+        <xs:sequence>
+          <xs:element name="city" type="xs:string" minOccurs="0"/>
+          <xs:element name="effectiveEndDate" type="xs:dateTime" gw:type="java.util.Date" minOccurs="0"/>
+          <xs:element name="effectiveStartDate" type="xs:dateTime" gw:type="java.util.Date" minOccurs="0"/>
+          <xs:element name="policyNumber" type="xs:string" minOccurs="0"/>
+          <xs:element name="policyType" type="xs:string" minOccurs="0"/>
+          <xs:element name="postalCode" type="xs:string" minOccurs="0"/>
+          <xs:element name="primaryInsured" type="xs:string" minOccurs="0"/>
+          <xs:element name="state" type="xs:string" minOccurs="0"/>
+          <xs:element name="streetLine1" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:portType name="PolicyAPIPortType">
+    <wsdl:operation name="searchForHomeownersPolicies">
+      <wsdl:input name="searchForHomeownersPolicies" message="tns:searchForHomeownersPolicies"/>
+      <wsdl:output name="searchForHomeownersPoliciesResponse" message="tns:searchForHomeownersPoliciesResponse"/>
+      <wsdl:fault name="WebServiceException" message="tns:WebServiceException"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveHomeownersPolicy">
+      <wsdl:input name="retrieveHomeownersPolicy" message="tns:retrieveHomeownersPolicy"/>
+      <wsdl:output name="retrieveHomeownersPolicyResponse" message="tns:retrieveHomeownersPolicyResponse"/>
+      <wsdl:fault name="WebServiceException" message="tns:WebServiceException"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="searchForPersonalAutoPolicies">
+      <wsdl:input name="searchForPersonalAutoPolicies" message="tns:searchForPersonalAutoPolicies"/>
+      <wsdl:output name="searchForPersonalAutoPoliciesResponse" message="tns:searchForPersonalAutoPoliciesResponse"/>
+      <wsdl:fault name="WebServiceException" message="tns:WebServiceException"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+    <wsdl:operation name="retrievePersonalAutoPolicy">
+      <wsdl:input name="retrievePersonalAutoPolicy" message="tns:retrievePersonalAutoPolicy"/>
+      <wsdl:output name="retrievePersonalAutoPolicyResponse" message="tns:retrievePersonalAutoPolicyResponse"/>
+      <wsdl:fault name="WebServiceException" message="tns:WebServiceException"/>
+      <wsdl:fault name="WsiAuthenticationException" message="tns:WsiAuthenticationException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PolicyAPISoap12Binding" type="tns:PolicyAPIPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="searchForHomeownersPolicies">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="searchForHomeownersPolicies">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="searchForHomeownersPoliciesResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap12:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveHomeownersPolicy">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="retrieveHomeownersPolicy">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retrieveHomeownersPolicyResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap12:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="searchForPersonalAutoPolicies">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="searchForPersonalAutoPolicies">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="searchForPersonalAutoPoliciesResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap12:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievePersonalAutoPolicy">
+      <soap12:operation soapActionRequired="false" style="document"/>
+      <wsdl:input name="retrievePersonalAutoPolicy">
+        <soap12:body use="literal"/>
+        <soap12:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap12:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retrievePersonalAutoPolicyResponse">
+        <soap12:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap12:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap12:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="PolicyAPISoap11Binding" type="tns:PolicyAPIPortType">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="searchForHomeownersPolicies">
+      <soap11:operation style="document"/>
+      <wsdl:input name="searchForHomeownersPolicies">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="searchForHomeownersPoliciesResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap11:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrieveHomeownersPolicy">
+      <soap11:operation style="document"/>
+      <wsdl:input name="retrieveHomeownersPolicy">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retrieveHomeownersPolicyResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap11:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="searchForPersonalAutoPolicies">
+      <soap11:operation style="document"/>
+      <wsdl:input name="searchForPersonalAutoPolicies">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="searchForPersonalAutoPoliciesResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap11:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="retrievePersonalAutoPolicy">
+      <soap11:operation style="document"/>
+      <wsdl:input name="retrievePersonalAutoPolicy">
+        <soap11:body use="literal"/>
+        <soap11:header message="tns:gw-authentication" part="gw-authentication" use="literal"/>
+        <soap11:header message="tns:gw-locale" part="gw-locale" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retrievePersonalAutoPolicyResponse">
+        <soap11:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WebServiceException">
+        <soap11:fault name="WebServiceException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WsiAuthenticationException">
+        <soap11:fault name="WsiAuthenticationException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PolicyAPI">
+    <wsdl:port name="PolicyAPISoap12Port" binding="tns:PolicyAPISoap12Binding">
+      <soap12:address location="http://localhost:9990/ab/ws/external/pas/PolicyAPI"/>
+      <gwwsdl:address location="${ab}/ws/external/pas/PolicyAPI"/>
+    </wsdl:port>
+    <wsdl:port name="PolicyAPISoap11Port" binding="tns:PolicyAPISoap11Binding">
+      <soap11:address location="http://localhost:9990/ab/ws/external/pas/PolicyAPI/soap11"/>
+      <gwwsdl:address location="${ab}/ws/external/pas/PolicyAPI/soap11"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:message name="searchForHomeownersPolicies">
+    <wsdl:part name="parameters" element="tns:searchForHomeownersPolicies"/>
+  </wsdl:message>
+  <wsdl:message name="searchForHomeownersPoliciesResponse">
+    <wsdl:part name="parameters" element="tns:searchForHomeownersPoliciesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="WebServiceException">
+    <wsdl:part name="WebServiceException" element="tns:WebServiceException"/>
+  </wsdl:message>
+  <wsdl:message name="WsiAuthenticationException">
+    <wsdl:part name="WsiAuthenticationException" element="tns:WsiAuthenticationException"/>
+  </wsdl:message>
+  <wsdl:message name="retrieveHomeownersPolicy">
+    <wsdl:part name="parameters" element="tns:retrieveHomeownersPolicy"/>
+  </wsdl:message>
+  <wsdl:message name="retrieveHomeownersPolicyResponse">
+    <wsdl:part name="parameters" element="tns:retrieveHomeownersPolicyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="searchForPersonalAutoPolicies">
+    <wsdl:part name="parameters" element="tns:searchForPersonalAutoPolicies"/>
+  </wsdl:message>
+  <wsdl:message name="searchForPersonalAutoPoliciesResponse">
+    <wsdl:part name="parameters" element="tns:searchForPersonalAutoPoliciesResponse"/>
+  </wsdl:message>
+  <wsdl:message name="retrievePersonalAutoPolicy">
+    <wsdl:part name="parameters" element="tns:retrievePersonalAutoPolicy"/>
+  </wsdl:message>
+  <wsdl:message name="retrievePersonalAutoPolicyResponse">
+    <wsdl:part name="parameters" element="tns:retrievePersonalAutoPolicyResponse"/>
+  </wsdl:message>
+  <wsdl:message name="gw-authentication">
+    <wsdl:part name="gw-authentication" element="gwsoap:authentication"/>
+  </wsdl:message>
+  <wsdl:message name="gw-locale">
+    <wsdl:part name="gw-locale" element="gwsoap:locale"/>
+  </wsdl:message>
+</wsdl:definitions>

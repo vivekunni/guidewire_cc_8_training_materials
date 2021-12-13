@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../pcf.xsd">
+  <DetailViewPanel
+    editable="true"
+    id="ABContactSummaryDV">
+    <Require
+      name="anABContact"
+      type="ABContact"/>
+    <InputColumn>
+      <Label
+        label="displaykey.Training.BasicInformation"/>
+      <Input
+        id="Name"
+        label="displaykey.Training.Name"
+        value="anABContact.DisplayName"/>
+      <Input
+        id="ContactID"
+        label="displaykey.Training.PublicID"
+        value="anABContact.PublicID"/>
+      <InputDivider/>
+      <RangeInput
+        editable="true"
+        id="AssignedUser"
+        label="displaykey.Training.AssignedUser"
+        value="anABContact.AssignedUser"
+        valueRange="queryForContactManagers()"/>
+      <DateInput
+        id="CreateTime"
+        label="displaykey.Training.CreatedOn"
+        value="anABContact.CreateTime"/>
+      <InputDivider/>
+      <Label
+        id="PrimaryAddressLabel"
+        label="displaykey.Training.PrimaryAddress"/>
+      <InputSetRef
+        def="AddressOwnerInputSet(new gw.api.address.SecondaryAddressOwner(anABContact.PrimaryAddress), true)"/>
+      <InputDivider/>
+      <Label
+        label="displaykey.Ext.ContactAnalysis"/>
+      <TypeKeyInput
+        editable="true"
+        id="ContactTier"
+        label="displaykey.Ext.ContactTier"
+        value="anABContact.ContactTier"
+        valueWidth="20"/>
+      <TextInput
+        editable="true"
+        id="CustomerRating"
+        label="displaykey.Ext.CustomerRating"
+        value="anABContact.CustomerRating_Ext"/>
+      <BooleanRadioInput
+        editable="true"
+        id="StrategicPartner"
+        label="displaykey.Ext.StrategicPartner"
+        value="anABContact.IsStrategicPartner_Ext"/>
+      <DateInput
+        editable="true"
+        id="LastCourtesyContact"
+        label="displaykey.Ext.LastCourtesyContact"
+        value="anABContact.LastCourtesyContact_Ext"/>
+      <TextInput
+        editable="false"
+        id="NumberOfFraudInvestigations"
+        label="displaykey.Ext.FraudInvestigations"
+        value="anABContact.FraudInvestigationNum_Ext"/>
+      <TextInput
+        editable="true"
+        id="WebAddress"
+        label="displaykey.Ext.WebAddress"
+        value="anABContact.WebAddress_Ext"/>
+    </InputColumn>
+    <InputColumn>
+      <ListViewInput
+        boldLabel="true"
+        def="FlagEntriesLV(anABContact)"
+        id="FlagEntriesLV"
+        label="displaykey.Training.FlagEntries"
+        labelAbove="true">
+        <Toolbar/>
+      </ListViewInput>
+    </InputColumn>
+    <Code><![CDATA[uses gw.api.util.DisplayableException
+
+/* This function is used to populate the Employer dynamic dropdown.
+*/
+function queryForContactManagers () : gw.api.database.IQueryBeanResult<entity.User> {
+
+  // Query for all roles with the name "Contact Manager". (There is only one.)                
+  var roleQuery = gw.api.database.Query.make(Role)
+  roleQuery.compare("Name", Equals, "Contact Manager")
+  
+  // Query for all instances of UserRole that point to the "Contact Manager" role
+  // from the previous query.
+  var userRoleQuery = gw.api.database.Query.make(UserRole)
+  userRoleQuery.subselect("Role", CompareIn, roleQuery, "ID")
+  
+  // Query for all users which are referenced by the UserRole instances from
+  // the query above. (That is, the UserRole instances that also point to
+  // "Contact Manager".
+  var userQuery = gw.api.database.Query.make(User)
+  userQuery.subselect("ID", CompareIn, userRoleQuery, "User")                  
+  
+  // Execute the query and return the results.     
+  var resultSet = userQuery.select()
+  return resultSet
+  
+}
+
+
+]]></Code>
+  </DetailViewPanel>
+</PCF>

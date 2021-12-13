@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<PCF
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../../../../pcf.xsd">
+  <DetailViewPanel
+    editable="true"
+    id="ABContactDetailsCompanyDV">
+    <Require
+      name="anABContact"
+      type="ABContact"/>
+    <InputColumn>
+      <Input
+        editable="true"
+        id="Name"
+        label="displaykey.Training.Name"
+        required="true"
+        value="(anABContact as ABCompany).Name"/>
+      <Label
+        id="PrimaryContactLabel"
+        label="displaykey.Training.PrimaryContact"/>
+      <Label
+        id="PrimaryContactHelp"
+        label="displaykey.Training.PrimaryContactHelper"
+        visible="User.util.getCurrentUser().UseHelperLabels"/>
+      <RangeInput
+        editable="true"
+        id="PrimaryContact"
+        label="displaykey.Training.PrimaryContact"
+        value="(anABContact as ABCompany).PrimaryContact"
+        valueRange="(anABContact as ABCompany).Employees">
+        <PostOnChange
+          target="DATA_ONLY"/>
+      </RangeInput>
+      <InputSetRef
+        def="GlobalAddressInputSet(new gw.api.address.SecondaryAddressOwner((anABContact as ABCompany).PrimaryContact.PrimaryAddress))"
+        editable="false"
+        id="globalAddressContainer"
+        mode="gw.api.address.AddressCountrySettings.getSettings(new gw.api.address.SecondaryAddressOwner((anABContact as ABCompany).PrimaryContact.PrimaryAddress).SelectedCountry).PCFMode"
+        widgets="globalAddressContainer"/>
+      <Input
+        available="(anABContact as ABCompany).PrimaryContact !=null"
+        editable="true"
+        id="EmailAddress"
+        label="displaykey.Training.EmailAddress"
+        value="(anABContact as ABCompany).PrimaryContact.EmailAddress1">
+        <PostOnChange
+          target="PrefersContactByEmail"/>
+      </Input>
+      <BooleanRadioInput
+        available="(anABContact as ABCompany).PrimaryContact.EmailAddress1 != null"
+        editable="PrefersContactByEmailEditable()"
+        falseLabel="displaykey.Training.No"
+        id="PrefersContactByEmail"
+        label="displaykey.Training.PrefersContactByEmail"
+        trueLabel="displaykey.Training.Yes"
+        value="(anABContact as ABCompany).PrimaryContact.PrefersContactByEmail"
+        visible="(anABContact as ABCompany).PrimaryContact.EmailAddress1 != null"/>
+      <InputDivider/>
+      <Label
+        id="AdditionalInfo"
+        label="displaykey.Training.AdditionalInfo"/>
+      <Input
+        editable="true"
+        id="TaxID"
+        label="displaykey.Training.TaxID"
+        required="true"
+        value="(anABContact as ABCompany).TaxID"/>
+      <Input
+        editable="true"
+        id="InspectionRequired"
+        label="displaykey.Training.InspectionRequired"
+        value="(anABContact as ABCompany).InspectionRequired">
+        <PostOnChange/>
+      </Input>
+      <Input
+        editable="true"
+        id="InspectionDate"
+        label="displaykey.Training.InspectionDate"
+        value="(anABContact as ABCompany).InspectionDate"
+        visible="(anABContact as ABCompany).InspectionRequired == true"/>
+      <Input
+        editable="true"
+        id="ABAutoRepairShopLicense"
+        label="displaykey.Training.License"
+        value="(anABContact as ABAutoRepairShop).AutoRepairLicense"
+        visible="anABContact typeis ABAutoRepairShop"/>
+      <Input
+        editable="true"
+        id="ABAutoTowingAgcyLicense"
+        label="displaykey.Training.License"
+        value="(anABContact as ABAutoTowingAgcy).AutoTowingLicense"
+        visible="anABContact typeis ABAutoTowingAgcy"/>
+      <Input
+        editable="true"
+        id="ABLawFirmSpecialty"
+        label="displaykey.Training.Specialty"
+        value="(anABContact as ABLawFirm).LawFirmSpecialty"
+        visible="anABContact typeis ABLawFirm"/>
+      <Input
+        editable="true"
+        id="ABMedicalCareOrg"
+        label="displaykey.Training.Specialty"
+        value="(anABContact as ABMedicalCareOrg).MedicalOrgSpecialty"
+        visible="anABContact typeis ABMedicalCareOrg"/>
+      <TypeKeyInput
+        editable="true"
+        id="PreferredCurrency"
+        label="displaykey.Training.PreferredCurrency"
+        value="(anABContact as ABCompany).PreferredCurrency"/>
+      <InputSet
+        id="ColateralInputSet"
+        visible="anABContact typeis ABPolicyCompany">
+        <Label
+          id="CollateralLabel"
+          label="displaykey.Training.CollateralInfo"/>
+        <Input
+          editable="true"
+          id="CollateralRequired"
+          label="displaykey.Training.CollateralRequired"
+          value="(anABContact as ABPolicyCompany).CollateralRequired">
+          <PostOnChange/>
+        </Input>
+        <TextInput
+          editable="true"
+          id="CollateralAmount"
+          inputMask="&quot;####&quot;"
+          label="displaykey.Training.CollateralAmount"
+          value="(anABContact as ABPolicyCompany).CollateralAmount"
+          visible="(anABContact as ABPolicyCompany).CollateralRequired"/>
+        <Input
+          editable="true"
+          id="CollateralVerified"
+          label="displaykey.Training.CollateralVerified"
+          value="(anABContact as ABPolicyCompany).CompanyCollateralVerified"
+          visible="(anABContact as ABPolicyCompany).CollateralRequired"/>
+      </InputSet>
+    </InputColumn>
+    <InputColumn>
+      <Label
+        id="EmployeeInfo"
+        label="displaykey.Training.EmployeeInfo"/>
+      <Input
+        editable="true"
+        id="CanAddEmployees"
+        label="displaykey.Training.CanHaveEmployees"
+        value="(anABContact as ABCompany).CanAddEmployees">
+        <PostOnChange/>
+      </Input>
+      <TextInput
+        id="NumberOfEmployees"
+        label="displaykey.Training.NumberOfEmployees"
+        value="(anABContact as ABCompany).NumberOfEmployees"
+        visible="(anABContact as ABCompany).CanAddEmployees == true"/>
+      <ListViewInput
+        boldLabel="true"
+        def="ABCompanyEmployeesLV(anABContact)"
+        id="ABCompanyEmployeesLV"
+        label="displaykey.Training.Employees"
+        labelAbove="true"
+        visible="(anABContact as ABCompany).CanAddEmployees == true">
+        <Toolbar/>
+      </ListViewInput>
+      <InputDivider/>
+      <InputSetRef
+        def="SpecialtyInfoInputSet(anABContact)"
+        id="SpecialtyInputSet"
+        mode="anABContact.Subtype"/>
+      <InputDivider/>
+      <InputSet
+        id="FinancialPersonnelInputSet"
+        visible="anABContact typeis ABCompanyVendor">
+        <Label
+          id="FinancialPersonnelLabel"
+          label="displaykey.Training.FinancialPersonnel"/>
+        <RangeInput
+          editable="true"
+          id="FinanceManager"
+          label="displaykey.Training.FinanceManager"
+          value="(anABContact as ABCompanyVendor).FinanceManager"
+          valueRange="(anABContact as ABCompany).Employees"/>
+        <RangeInput
+          editable="true"
+          id="PaymentContact"
+          label="displaykey.Training.PaymentContact"
+          value="(anABContact as ABCompanyVendor).PaymentContact"
+          valueRange="(anABContact as ABCompany).Employees"/>
+        <TypeKeyInput
+          editable="true"
+          id="FinanceMgrRelationship"
+          label="displaykey.Training.RelationshipToFinanceManager"
+          value="(anABContact as ABCompanyVendor).FinanceMgrRelationship">
+          <Reflect
+            triggerIds="PaymentContact,FinanceManager"
+            value="(VALUE1 != null and VALUE1 == VALUE2) ?  ManagerRelationshipType.TC_SELF : null"/>
+        </TypeKeyInput>
+      </InputSet>
+	  <InputSetRef
+        def="ContactInsightsInputSet(anABContact)"/>
+    </InputColumn>
+    <Code><![CDATA[// The logic to determine if the PrefersContactByEmail field should be editable must check to see if anABContact is a company,
+// and if so, if the primary contact is non-null. If you attempt to do both checks in a single line, then you get a coercion error.
+// (This is because the check for a primary contact works only if the contact is an ABCompany.) This function simply splits the
+// logic into two lines.
+
+function PrefersContactByEmailEditable() : boolean {
+  var returnValue : boolean = false
+  if (anABContact typeis ABCompany)
+    if (anABContact.PrimaryContact != null)  // typeis automatically downcasts object; casting isn't needed here
+      returnValue = true
+  return returnValue
+}]]></Code>
+  </DetailViewPanel>
+</PCF>

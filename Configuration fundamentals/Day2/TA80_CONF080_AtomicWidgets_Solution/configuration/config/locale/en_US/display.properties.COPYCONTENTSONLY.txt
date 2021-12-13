@@ -1,0 +1,11 @@
+-- NOTE!!!
+-- Copy the display keys below to your display.properties file
+-- ...\configuration\config\locale\en_US\display.properties
+
+Ext.ContactAnalysis = Contact Analysis
+Ext.ContactTier = Contact Tier
+Ext.CustomerRating = Customer Rating
+Ext.StrategicPartner = Strategic Partner
+Ext.LastCourtesyContact = Last Courtesy Contact
+Ext.FraudInvestigations = Fraud Investigations
+Ext.WebAddress = Web Address
